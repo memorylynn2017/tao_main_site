@@ -5,3 +5,30 @@
 3、或者你有更好的建议文章也请把链接放在这里:
 (1)https://fraserxu.me/2013/09/12/Using-Handlebarsjs-with-Expressjs/
 (2)https://www.cnblogs.com/qieguo/p/5811988.html（Handlebars 模板引擎之前后端用法）
+
+|-app.js
+|-node_modules
+| |--express
+| |--handlebars
+| |--hbs
+| |--less-middleware
+| |--nodemon
+| |--request
+|-package.json
+|-public
+| |--images
+| |--javascripts
+| |   --app.js
+| |--lib
+| |   --font
+| |   --js
+| |   --stylesheets
+| |--routes
+| |   --github.js
+| |   --index.js
+| |--views
+  |   --index.hbs
+  |   --orgs.hbs
+  |   --partials
+    |--footer.hbs
+    |--header.hbs
