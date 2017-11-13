@@ -3,20 +3,20 @@ module.exports = function(req, res) {
         res.json({ state: 'fail', msg: '操作失败', data: [] });
     }
 
-    this.Hello = function(req, res){
-		console.log("Hello world！！" );
-		res.render('index', {
-			locals: {
-				title: 'Express',
-                text: "hello world",
-                city: "London",
-			}
-		});
-    }
+    // this.Hello = function(req, res){
+	// 	console.log("Hello world！！" );
+	// 	res.render('index', {
+	// 		locals: {
+	// 			title: 'Express',
+    //             text: "hello world",
+    //             city: "London",
+	// 		}
+	// 	});
+    // }
     
-    this.getHello = function(req, res){
-        console.log("Hello world！！" );
-    }
+    // this.getHello = function(req, res){
+    //     console.log("Hello world！！" );
+    // }
 }
 
 // function IndexHandler() {

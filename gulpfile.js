@@ -1,0 +1,28 @@
+var gulp = require('gulp'),
+    less = require('gulp-less'),
+    minifycss = require('gulp-minify-css'),
+    autoprefixer = require('gulp-autoprefixer');	//前缀的后处理程序
+
+// 压缩 less
+gulp.task('less', function () {
+    return gulp.src('./static/assets/less/*.less')
+    .pipe(less())
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions', 'Android >= 4.0'],
+        cascade: true, //是否美化属性值 默认：true 像这样：
+        //-webkit-transform: rotate(45deg);
+        //        transform: rotate(45deg);
+        remove:true //是否去掉不必要的前缀 默认：true 
+    }))
+    //.pipe(minifycss())
+    .pipe(gulp.dest('./static/assets/css'));
+});
+
+gulp.task('watch', function(){
+	gulp.watch('./static/assets/less/*.less',['less']);
+})
+
+//定义默认任务
+gulp.task('default',['less', 'watch'],function(){
+    console.log('ok');
+});
