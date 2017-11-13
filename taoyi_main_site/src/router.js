@@ -1,7 +1,7 @@
 
 // 由于网站的路由请求get、post等比较多也可以建一个router文件夹来依类分配。。
 
-// 第一段
+// 第一段 如果用一个router.js可以分清楚所有路由请求，也可以只用一个的。。
 
 // var express = require('express') ;
 // var router = express.Router();
