@@ -1,0 +1,25 @@
+{
+  "name": "xsd_project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "xsd"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xuesongde/xsd-node_project",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "AdminLTE": "admin-lte#~2.3.2",
+    "Ionicons": "ionicons#~2.0.1"
+  }
+}

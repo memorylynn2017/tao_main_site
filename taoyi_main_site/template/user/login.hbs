@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录淘亿</title>
+</head>
+<body>
+    <p><input type="text" value="" id="tb_user" placeholder="用户名"></p>
+    <p><input type="password" value="" id="tb_pwd" placeholder="密码"></p>
+    <p><input type="button" value="登录" id="btn_login"></p>
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script>
+        var app = {
+            init: function(){
+                var me = this;
+                me.render();
+                me.bind();
+            },
+            render: function(){
+                var me = this;
+                me.btn_login = $('#btn_login');
+                me.tb_user= $('#tb_user');
+                me.tb_pwd= $('#tb_pwd');
+            },
+            bind: function(){
+                var me = this;
+                //登录
+                me.btn_login.on('click',function(e){
+                    var user = me.tb_user.val();
+                    var pwd = me.tb_pwd.val();
+                    if (user=='' || pwd==''){
+                        alert('请认真输入');
+                        return;
+                    }
+
+                    $.ajax({
+                        url: '/api/user/login',
+                        type: 'post',
+                        dataType: 'json',
+                        data: {user: user, pwd: pwd},
+                        success: function(data){
+                            console.log(data);
+                            if (data.state == 'success'){
+                                alert('登录成功');
+                                location.href = "/";
+                            }else{
+                                alert('登录失败')
+                            }
+                        }
+                    })
+                })
+            }
+        }
+        $(function (){  
+            app.init();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+//定义z-index
+.z-loop(@n, @i:1) when (@i <= @n) {
+    .z-@{i} {
+		z-index: @i;
+    }
+    .z-loop(@n, (@i + 1));
+}
+
+
+*{
+	box-sizing: border-box;
+}
+.wrap{
+	margin: 0 auto;
+	width: 1190px;
+}
+.pull-left{float: left;}
+.pull-right{float: right;}
+.txt-left{text-align: left;}
+.txt-center{text-align: center;}
+.txt-right{text-align: right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+
+.cmm-h-ul >li{float: left;display: inline-block;}
+
+//调用z-index
+.z-loop(9);
