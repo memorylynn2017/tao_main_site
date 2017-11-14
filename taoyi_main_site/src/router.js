@@ -9,7 +9,8 @@ router.get('/', function(req, res, next) {
     var options = { title: 'Express',
         city: "London",
         street: "Baker Street",
-        number: "221B"
+        number: "221B",
+        picurl: "/assets/images/sky.gif"
     }
     res.render('index', options);
 });
