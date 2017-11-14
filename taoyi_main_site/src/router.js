@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
         city: "London",
         street: "Baker Street",
         number: "221B",
-        picurl: "/assets/images/sky.gif"
+        picurl: "/assets/images/logo_new.png"
     }
     res.render('index', options);
 });
