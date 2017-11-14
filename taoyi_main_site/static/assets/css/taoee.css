@@ -86,6 +86,7 @@ body {
 }
 .header .header-main {
   height: 110px;
+  background: #fff;
 }
 .header .header-main .logo {
   display: inline-block;
@@ -99,8 +100,43 @@ body {
   border: 1px solid #ddd;
 }
 .header .header-main .search-frame .search-box .search-text {
+  position: relative;
   width: 370px;
   height: 40px;
+  border-right: 1px solid #ddd;
+}
+.header .header-main .search-frame .search-box .search-text input {
+  padding: 0 15px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.header .header-main .search-frame .search-box .search-text .search-pic {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #000;
+}
+.header .header-main .search-frame .search-box .search-btn .btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header .header-main .search-frame .search-box .search-btn .btn:hover {
+  color: #fff;
+  background: #ff0000;
 }
 .header .header-main .search-frame .cart-btn {
   display: inline-block;
@@ -119,11 +155,84 @@ body {
 }
 .header .header-nav .pro-all {
   display: inline-block;
+  padding: 0 18px;
   width: 220px;
   height: 50px;
+  line-height: 50px;
   font-size: 18px;
   background: #E70012;
   color: #fff;
+}
+.header .header-nav .nav li a {
+  display: inline-block;
+  padding: 0 28px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+}
+.header .header-nav .nav li a:hover {
+  background: #000;
+}
+.header .header-nav .nav li.on > a {
+  background: #000;
+}
+.footer {
+  background: #fff;
+  font-size: 13px;
+}
+.footer .commitment {
+  background: url(../images/commitment-bj.jpg);
+}
+.footer .footer-nav {
+  height: 190px;
+  background: url(../images/taoee-footer-bg.png) no-repeat center bottom;
+}
+.footer .footer-nav .navbar-lv1 > li {
+  width: 160px;
+  min-height: 100px;
+  margin: 30px 30px 30px 0;
+  border-right: 1px solid #ddd;
+}
+.footer .footer-nav .navbar-lv1 > li:last-child {
+  width: auto;
+  border: none;
+}
+.footer .footer-nav .navbar-lv1 > li > a {
+  font-size: 18px;
+  color: #333;
+}
+.footer .footer-nav .navbar-lv1 > li .navbar-lv2 li {
+  font-size: 14px;
+}
+.footer .footer-nav .navbar-lv1 > li .navbar-lv2 li a {
+  color: #333;
+}
+.footer .footer-nav2 .navbar {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  line-height: 1.2;
+  left: 50%;
+}
+.footer .footer-nav2 .navbar ul {
+  padding: 17px 0;
+  left: 50%;
+}
+.footer .footer-nav2 .navbar ul li {
+  padding: 0 11px;
+  border-left: 1px solid #e6e6e6;
+}
+.footer .footer-nav2 .navbar ul li:first-child {
+  border: none;
+}
+.footer .footer-nav2 .navbar ul li a {
+  color: #a4a4a4;
+}
+.footer .footer-nav2 .copyright {
+  height: 50px;
+  color: #919191;
 }
 .home {
   min-height: 400px;

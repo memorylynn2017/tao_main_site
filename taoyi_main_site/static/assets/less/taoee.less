@@ -4,6 +4,7 @@ body{
   color: #666;
 }
 
+//页头
 .header{
   // 顶部地图
   .header-top{
@@ -39,6 +40,7 @@ body{
   //顶部内容
   .header-main{
     height: 110px;
+    background: #fff;
 
     .logo{
       display: inline-block;
@@ -52,8 +54,45 @@ body{
         border: 1px solid #ddd;
 
         .search-text{
+          position: relative;
           width: 370px;
           height: 40px;
+          border-right: 1px solid #ddd; 
+          input{
+            padding: 0 15px;
+            width: 100%;
+            height: 40px;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            background: none;
+          }
+          .search-pic{
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            padding: 0 15px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 12px;
+            color: #000;
+          }
+        }
+        .search-btn {
+          .btn{
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            &:hover{
+              color: #fff;
+              background: #ff0000;
+            }
+          }
         }
       }
       .cart-btn{
@@ -75,15 +114,105 @@ body{
     background: #404144;
     .pro-all{
       display: inline-block;
+      padding: 0 18px;
       width: 220px;
-      height: 50px; 
+      height: 50px;
+      line-height: 50px;
       font-size: 18px;
       background: #E70012;
       color: #fff;
     }
+    .nav{
+      li{
+        a{
+          display: inline-block;
+          padding: 0 28px;
+          line-height: 50px;
+          font-size: 18px;
+          color: #fff;
+          
+          &:hover{
+            background: #000;
+          }
+        }
+        &.on >a{
+          background: #000;
+        }
+      }
+    }
   }
 }
 
+//页脚
+.footer{
+  background: #fff;
+  font-size: 13px;
+  // 入驻
+  .commitment{
+    background: url(../images/commitment-bj.jpg);
+  }
+
+  .footer-nav{
+    height: 190px;
+    background: url(../images/taoee-footer-bg.png) no-repeat center bottom;
+
+    .navbar-lv1{
+      & >li{
+        width: 160px;
+        min-height: 100px;
+        margin: 30px 30px 30px 0;
+        border-right: 1px solid #ddd;
+
+        &:last-child{
+          width: auto;
+          border:none;
+        }
+        & >a{
+          font-size:18px;
+          color: #333;
+        }
+
+        .navbar-lv2{
+          li{
+            font-size: 14px;
+            a{
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-nav2{
+    .navbar{
+      position: relative;
+      display: inline-block;
+      height: 50px;
+      transform: translate(-50%, 0);
+      line-height: 1.2;
+      left: 50%;
+      ul{
+        padding: 17px 0;
+        left: 50%;
+        li{
+          padding: 0 11px;
+          border-left: 1px solid #e6e6e6;
+          &:first-child{
+            border: none;
+          }
+          a{
+            color: #a4a4a4;
+          }
+        }
+      }
+    }
+    .copyright{
+      height: 50px;
+      color: #919191;
+    }
+  }
+}
 
 .home{
   min-height: 400px;

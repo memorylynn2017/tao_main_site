@@ -4,12 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-<<<<<<< HEAD:app.js
+
 var hbs = require('hbs');
 //var lessMiddleware = require('less-middleware');
 // var expressLess = require('express-less');
-=======
->>>>>>> b3ce107b06e8c61bc65e79d517726ead9600e91f:demo/demo_version2/app.js
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
