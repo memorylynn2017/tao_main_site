@@ -1,0 +1,70 @@
+//页脚
+.footer{
+    background: #fff;
+    font-size: 13px;
+    // 入驻
+    .commitment{
+      background: url(../images/commitment-bj.jpg);
+    }
+  
+    .footer-nav{
+      height: 190px;
+      background: url(../images/taoee-footer-bg.png) no-repeat center bottom;
+  
+      .navbar-lv1{
+        & >li{
+          width: 160px;
+          min-height: 100px;
+          margin: 30px 30px 30px 0;
+          border-right: 1px solid #ddd;
+  
+          &:last-child{
+            width: auto;
+            border:none;
+          }
+          & >a{
+            font-size:18px;
+            color: #333;
+          }
+  
+          .navbar-lv2{
+            li{
+              font-size: 14px;
+              a{
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .footer-nav2{
+      .navbar{
+        position: relative;
+        display: inline-block;
+        height: 50px;
+        transform: translate(-50%, 0);
+        line-height: 1.2;
+        left: 50%;
+        ul{
+          padding: 17px 0;
+          left: 50%;
+          li{
+            padding: 0 11px;
+            border-left: 1px solid #e6e6e6;
+            &:first-child{
+              border: none;
+            }
+            a{
+              color: #a4a4a4;
+            }
+          }
+        }
+      }
+      .copyright{
+        height: 50px;
+        color: #919191;
+      }
+    }
+  }

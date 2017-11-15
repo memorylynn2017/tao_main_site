@@ -98,16 +98,36 @@
   background: #E70012;
   color: #fff;
 }
-.header .header-nav .nav li a {
+.header .header-nav .nav-top li a {
   display: inline-block;
   padding: 0 28px;
   line-height: 50px;
   font-size: 18px;
   color: #fff;
 }
-.header .header-nav .nav li a:hover {
+.header .header-nav .nav-top li a:hover {
   background: #000;
 }
-.header .header-nav .nav li.on > a {
+@media (max-width: 800px) {
+  .header .header-nav .nav-top li a {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 800px) {
+  .header .header-nav .nav-top li a {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 992px) {
+  .header .header-nav .nav-top li a {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .header .header-nav .nav-top li a {
+    padding: 0 28px;
+  }
+}
+.header .header-nav .nav-top li.on > a {
   background: #000;
 }

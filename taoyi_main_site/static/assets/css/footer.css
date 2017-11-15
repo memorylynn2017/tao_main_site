@@ -1,0 +1,58 @@
+.footer {
+  background: #fff;
+  font-size: 13px;
+}
+.footer .commitment {
+  background: url(../images/commitment-bj.jpg);
+}
+.footer .footer-nav {
+  height: 190px;
+  background: url(../images/taoee-footer-bg.png) no-repeat center bottom;
+}
+.footer .footer-nav .navbar-lv1 > li {
+  width: 160px;
+  min-height: 100px;
+  margin: 30px 30px 30px 0;
+  border-right: 1px solid #ddd;
+}
+.footer .footer-nav .navbar-lv1 > li:last-child {
+  width: auto;
+  border: none;
+}
+.footer .footer-nav .navbar-lv1 > li > a {
+  font-size: 18px;
+  color: #333;
+}
+.footer .footer-nav .navbar-lv1 > li .navbar-lv2 li {
+  font-size: 14px;
+}
+.footer .footer-nav .navbar-lv1 > li .navbar-lv2 li a {
+  color: #333;
+}
+.footer .footer-nav2 .navbar {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  line-height: 1.2;
+  left: 50%;
+}
+.footer .footer-nav2 .navbar ul {
+  padding: 17px 0;
+  left: 50%;
+}
+.footer .footer-nav2 .navbar ul li {
+  padding: 0 11px;
+  border-left: 1px solid #e6e6e6;
+}
+.footer .footer-nav2 .navbar ul li:first-child {
+  border: none;
+}
+.footer .footer-nav2 .navbar ul li a {
+  color: #a4a4a4;
+}
+.footer .footer-nav2 .copyright {
+  height: 50px;
+  color: #919191;
+}

@@ -103,7 +103,7 @@
       }
     }
     //顶部导航
-      .header-nav{
+    .header-nav{
       height: 50px;
       background: #404144;
       .pro-all{
@@ -116,7 +116,7 @@
         background: #E70012;
         color: #fff;
       }
-      .nav{
+      .nav-top{
         li{
           a{
             display: inline-block;
@@ -129,10 +129,30 @@
               background: #000;
             }
           }
+          @media (max-width: 800px){
+            a{
+              padding: 0 10px;
+            }
+          }
+          @media (min-width: 800px){
+            a{
+              padding: 0 10px;
+            }
+          }
+          @media (min-width: 992px){
+            a{
+              padding: 0 20px;
+            }
+          }
+          @media (min-width: 1200px){
+            a{
+              padding: 0 28px;
+            }
+          }
           &.on >a{
             background: #000;
           }
         }
       }
     }
-  }
+}

@@ -1,15 +1,17 @@
+<link rel="stylesheet" href="/assets/css/header.css">
+<script src="/assets/js/header.js"></script>
 <header class="header">
 	{{!-- 顶部地图 --}}
 	<div class="header-top clearfix">
-		<div class="wrap">
-			<ul class="sitemap cmm-h-ul pull-left">
+		<div class="wrap container">
+			<ul class="sitemap nav navbar-nav pull-left ">
 				<li><a href="">淘亿批发</a></li>
 				<li><a href="">帮助中心</a></li>
 				<li><a href="">批发指数</a></li>
 				<li><a href="">联系我们</a></li>
 				<li><a href="">留言板</a></li>
 			</ul>
-			<ul class="regLogin cmm-h-ul pull-right">
+			<ul class="regLogin nav navbar-nav pull-right">
 				<li><a href="/login">登录</a></li>
 				<li><a href="/register">注册</a></li>
 			</ul>
@@ -17,7 +19,7 @@
 	</div>
 	{{!-- 顶部内容 --}}
 	<div class="header-main clearfix">
-		<div class="wrap clearfix">
+		<div class="wrap container clearfix">
 			<a class="logo" href="/">
 				<img src="/assets/images/logo_new.png" alt="">
 			</a>
@@ -28,21 +30,19 @@
 						<a class="search-pic" href="">图片搜索</a>
 					</div>
 					<div class="search-btn pull-right">
-						<a class="iconfont icon-fangdajing btn" href=""></a>
+						<a id="btn_search" class="iconfont icon-fangdajing btn" href="javascript:;"></a>
 					</div>
 				</form>
-				<a class="cart-btn pull-left" href="">
+				<a class="cart-btn pull-left" href="javascript:;">
 					<i class="iconfont icon-gouwuche"></i>购物车</a>
 			</div>
 		</div>
 	</div>
 	{{!-- 顶部导航 --}}
 	<div class="header-nav">
-		<div class="wrap">
-			<a class="pro-all pull-left" href="/">
-				全部商品
-			</a>
-			<ul class="nav cmm-h-ul pull-left">
+		<div class="wrap container">
+			<a class="pro-all pull-left" href="/">全部商品</a>
+			<ul class="nav navbar-nav nav-top pull-left">
 				<li class="on"><a href="/">首页</a></li>
 				<li><a href="/shop/dailyNew">每日新款</a></li>
 				<li><a href="/shop/seller">逛市场</a></li>
@@ -52,4 +52,4 @@
 			</ul>
 		</div>
 	</div>
-</header>	
+</header>
