@@ -2,10 +2,20 @@
 <html class="no-js" lang="">
 
 <head>
+  <meta charset="UTF-8">
   <title>淘亿(TAOEE.COM)-网络批发服务商-一手货源，厂家直批，全球配送，售后无忧，服装批发采购首选！</title>
   <link rel="stylesheet" href="/assets/css/neat.css" />
   <link rel="stylesheet" href="/assets/css/iconfont.css">
   <link rel="stylesheet" href="/assets/css/taoee.css" />
+
+  {{!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> --}}
+  {{!-- <link rel="stylesheet" href="/assets/css/reset.css"> --}}
+  {{!-- <link rel="stylesheet" href="/assets/css/base.css"> --}}
+
+  <script src="/assets/js/jquery.min.js"></script>
+  {{!-- <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/handlebars-v4.0.11.js"></script>
+  <script src="/assets/js/common.js"></script> --}}
 </head>
 
 <body>
@@ -14,16 +24,18 @@
   <![endif]-->
   {{> header}}
 
-  <div class="container-fluid site-wrapper">
+  {{!-- <div class="container-fluid site-wrapper">
     <div class="row">
+      {{{ body }}}
+    </div>
+  </div> --}}
+  <div class="home">
+    <div class="wrap">
       {{{ body }}}
     </div>
   </div>
 
   {{> footer}}
-  <script src="/assets/js/jquery.min.js"></script>
 </body>
 
 </html>
-
-

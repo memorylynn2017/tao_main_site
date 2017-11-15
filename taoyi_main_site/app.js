@@ -14,8 +14,10 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'template'));
 app.set('view engine', 'hbs');
+// app.set('view engine','html');
+// app.engine('html',hbs.__express);
 app.set('view options', {
-  layout:'layouts/layout.handlebars'
+  layout:'layouts/layout.hbs'
 });
 hbs.registerPartials(__dirname + '/template/partials');
 

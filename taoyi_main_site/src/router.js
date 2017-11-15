@@ -1,16 +1,21 @@
 'use strict';
 var express = require('express');
 var router = express.Router();
-//引用controller
+
+//用户控制器controller
 var user_controller = require(process.cwd() + '/src/controllers/user_controllers');
 
 //首页
 router.get('/', function(req, res, next) {
+    //左侧导航json
+    var typeData = require(process.cwd() + '/data/product_type.json');
+
     var options = { title: 'Express',
-        city: "London",
-        street: "Baker Street",
-        number: "221B",
-        picurl: "/assets/images/logo_new.png"
+        // city: "London",
+        // street: "Baker Street",
+        // number: "221B",
+        // picurl: "/assets/images/logo_new.png",
+        nav: typeData.data
     }
     res.render('index', options);
 });

@@ -237,3 +237,81 @@ body {
 .home {
   min-height: 400px;
 }
+.banner-con .menu {
+  position: relative;
+  width: 220px;
+  height: 450px;
+  z-index: 777;
+}
+.banner-con .menu .menu-li {
+  padding: 15px 0 0 20px;
+  width: 217px;
+  height: 74px;
+  background: #fff;
+  border-left: 3px solid #fff;
+  border-bottom: 1px dashed #ddd;
+}
+.banner-con .menu .menu-li:hover {
+  background: #fafafa;
+  border-left: 3px solid #ff0000;
+}
+.banner-con .menu .menu-li:hover .menu-con {
+  display: block;
+}
+.banner-con .menu .menu-li .pro-type-block .pro-type-parent {
+  color: #FF4A00;
+}
+.banner-con .menu .menu-li .pro-type-block .pro-type-parent a {
+  font-size: 14px;
+  color: inherit;
+}
+.banner-con .menu .menu-li .pro-type-block .pro-type-child {
+  margin-left: -5px;
+}
+.banner-con .menu .menu-li .pro-type-block .pro-type-child a {
+  margin-right: 5px;
+  padding: 1px 5px;
+  font-size: 14px;
+  color: #6d6d6d;
+}
+.banner-con .menu .menu-li .pro-type-block .pro-type-child a:hover {
+  background: #ddd;
+}
+.banner-con .menu .menu-li .menu-con {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 218px;
+  width: 710px;
+  height: 429px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+}
+.banner-con .menu .menu-li .menu-con .pro-left {
+  width: 420px;
+  padding-right: 10px;
+  border-right: 1px solid #ddd;
+}
+.banner-con .menu .menu-li .menu-con .pro-left .pro-type-block .pro-type-parent {
+  border-bottom: 1px dotted #ddd;
+}
+.banner-con .menu .menu-li .menu-con .pro-right {
+  width: 260px;
+}
+.banner-con .menu .menu-li .menu-con .pro-right .pro-type-block {
+  padding: 0 10px;
+}
+.banner-con .menu .menu-li .menu-con .pro-right .pro-type-block .pro-type-child {
+  margin-left: 0px;
+}
+.banner-con .menu .menu-li .menu-con .pro-right .pro-type-block .pro-type-child span {
+  float: left;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 19px;
+}
+.banner-con .menu .menu-li .menu-con .pro-right .pro-type-block .pro-type-child span a {
+  padding: 1px 0;
+}
