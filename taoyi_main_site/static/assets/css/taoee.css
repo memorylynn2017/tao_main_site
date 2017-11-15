@@ -251,6 +251,9 @@ body {
   border-left: 3px solid #fff;
   border-bottom: 1px dashed #ddd;
 }
+.banner-con .menu .menu-li:last-child {
+  border-bottom: 0;
+}
 .banner-con .menu .menu-li:hover {
   background: #fafafa;
   border-left: 3px solid #ff0000;
