@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="wrapper">
     <div class="container">
         
@@ -112,6 +113,49 @@
                                 </h5>
                             </div>
                         </div>
+=======
+<div class="banner-con clearfix">
+    <ul class="menu pull-left">
+        {{#each nav}}
+        <li class="menu-li">
+            <div class="pro-type-block">
+                {{#each this.Parent}}
+                <div class="pro-type-parent">
+                    <a href="{{this.url}}">{{this.name}}</a>
+                </div>
+                <div class="pro-type-child">
+                    {{#each this.childtype}}
+                    <a href="{{this.url}}">{{this.name}}</a>
+                    {{/each}}
+                </div>
+                {{/each}}
+            </div>
+            <div class="menu-con">
+                <div class="pro-left pull-left">
+                    {{#each this.Child}}
+                    <div class="pro-type-block">
+                        <div class="pro-type-parent">
+                            <a href="{{this.url}}">{{this.name}}</a>
+                        </div>
+                        <div class="pro-type-child">
+                            {{#each this.childtype}}
+                            <a href="{{this.url}}">{{this.name}}</a>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="pro-right pull-left">
+                    <div class="pro-type-block">
+                        <div class="pro-type-parent">推荐商家</div>
+                        <div class="pro-type-child">
+                            {{#each this.Recommend}}
+                            <span>
+                                <a href="{{this.url}}">{{this.name}}</a>
+                            </span>
+                            {{/each}}
+                        </div>
+>>>>>>> b9190b28281b8b0d8480688e6e9fffd5116d49be
                     </div>
                 </li>
                 {{/each}}
@@ -120,9 +164,6 @@
 
     </div>
 </div>
-  
-  
-{{!-- <h1>{{title}}</h1>
-<p>Welcome to 1 {{title}}</p>
-<p>You can find me in {{city}}. My address is {{number}} {{street}}.</p>
-<img src="{{picurl}}" alt=""> --}}
+
+
+
