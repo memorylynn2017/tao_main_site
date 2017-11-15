@@ -1,1 +1,69 @@
-<h1>每日新款</h1>
+<div class="dayupdate container">
+    <div class="searchbox qf">
+        <div class="left fl">
+            <div class="dropdown">
+                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true">
+                    女装上新
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>
+                        <a href="javascript:;">女装上新</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">男装上新</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">箱包上新</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">其它上新</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="datetimepicker" style="width: 100px; height: 28px; border: 1px solid #ddd;"></div>
+            <a href="javascript:;" role="button" class="btn btn-sm btn-danger">查看</a>
+            <a href="javascript:;" role="button" class="btn btn-sm btn-danger">今天</a>
+            <a href="javascript:;" role="button" class="btn btn-sm btn-danger">前一天</a>
+            <a href="javascript:;" role="button" class="btn btn-sm btn-danger">后一天</a>
+            <span class="numall">共
+                <font color="red">11</font>款</span>
+        </div>
+        <div class="right fr">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-danger">时间</button>
+                <button type="button" class="btn btn-  default">销量</button>
+                <button type="button" class="btn btn-default">价格</button>
+            </div>
+        </div>
+    </div>
+    <div class="contentbox" id="contentbox">
+        <ul class="qf">
+             {{#each list}}
+            <li class="productitem">
+                <a href="{{url}}">
+                    <dl class="item-content">
+                        <dt>
+                            <img src="{{img}}" alt="">
+                        </dt>
+                        <dd>
+                            <div class="msg qf">
+                                <strong class="price fl">￥{{price}}</strong>
+                                <span class="fr">已批
+                                    <strong>{{num}}</strong>件</span>
+                            </div>
+                            <p class="name">{{name}}</p>
+                            <p class="shopname">
+                                <a href="javascript:;">{{shopname}}</a>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+
