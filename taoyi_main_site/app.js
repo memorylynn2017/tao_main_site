@@ -31,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 // app.use('/', index);
 // app.use('/users', users);
+//路由设置
 app.use(require('./src/router'));
 
 // catch 404 and forward to error handler

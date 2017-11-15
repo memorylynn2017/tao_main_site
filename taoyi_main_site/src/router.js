@@ -5,13 +5,14 @@ var router = express.Router();
 //首页
 router.get('/', function(req, res, next) {
     //左侧导航json
-    var navData = require('../data/product_type.json');
-    var options = { title: 'Express',
+    var nav_Data = require('../data/product_type.json');
+    var options = { 
+        // title: 'Express',
         // city: "London",
         // street: "Baker Street",
         // number: "221B",
         // picurl: "/assets/images/logo_new.png",
-        nav: navData.data,
+        nav: nav_Data.data,
     }
     res.render('index', options);
 });
@@ -23,9 +24,8 @@ router.get('/register', require('../src/controllers/user_controllers').register)
 router.get('/login', require('../src/controllers/user_controllers').login);
 
 //每日一款
-router.get('/shop/dailyNew', function(req, res, next) {
-    res.render('shop/dailyNew');
-});
+router.get('/shop/dailyNew', require('../src/controllers/shop_controllers').dailyNew);
+
 //逛市场
 router.get('/shop/seller', function(req, res, next) {
     res.render('shop/seller');
