@@ -2,8 +2,8 @@
 
 //每日一款
 exports.dailyNew=function(req,res,next){
-    var dailyNew_Data = require(process.cwd() + '/data/dailyNew.json');
+    var listData = require(process.cwd() + '/data/product_list.json');
 	res.render('shop/dailyNew',{
-        product: dailyNew_Data.data,
+        list: listData.data,
     });
 }

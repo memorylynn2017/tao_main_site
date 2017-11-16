@@ -1,169 +1,52 @@
-<<<<<<< HEAD
 <div class="wrapper">
     <div class="container">
-        
         <div class="banner-con clearfix">
-            {{!-- 侧边菜单导航
-            <ul class="menu pull-left">
-                <li class="menu-li">
-                    <div class="pro-type-block">
-                        <h5 class="pro-type-parent"><a href="#">女装</a></h5>
-                        <h5 class="pro-type-child">
-                            <a href="#">打底裤</a>
-                            <a href="#">卫衣</a>
-                            <a href="#">打底裤</a>
-                        </h5>
-                    </div>
-                    <div class="menu-con">
-                        <div class="pro-left pull-left">
-                            <div class="pro-type-block">
-                                <h5 class="pro-type-parent"><a href="#">女装</a></h5>
-                                <h5 class="pro-type-child">
-                                    <a href="#">打底裤</a>
-                                    <a href="#">卫衣</a>
-                                    <a href="#">打底裤</a>
-                                    <a href="#">打底裤</a>
-                                    <a href="#">打底裤</a>
-                                    <a href="#">打底裤</a>
-                                    <a href="#">打底裤</a>
-                                    <a href="#">打底裤</a>
-                                    <a href="#">打底裤</a>
-                                </h5>
-                            </div>
-                            <div class="pro-type-block">
-                                <h5 class="pro-type-parent"><a href="#">女装</a></h5>
-                                <h5 class="pro-type-child">
-                                    <a href="#">打底裤</a>
-                                    <a href="#">卫衣</a>
-                                    <a href="#">打底裤</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="pro-right pull-left">
-                            <div class="pro-type-block">
-                                <h5 class="pro-type-parent">推荐商家</h5>
-                                <h5 class="pro-type-child">
-                                    <span><a href="#">依桂子网络服饰</a></span>
-                                    <span><a href="#">依桂子网络服饰</a></span>
-                                    <span><a href="#">依桂子网络服饰</a></span>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-li">
-                    <div class="pro-type-block">
-                        <h5 class="pro-type-parent"><a href="#">女装</a></h5>
-                        <h5 class="pro-type-child">
-                            <a href="#">打底裤</a>
-                            <a href="#">卫衣</a>
-                            <a href="#">打底裤</a>
-                        </h5>
-                    </div>
-                </li>
-                <li class="menu-li">
-                    <div class="pro-type-block">
-                        <h5 class="pro-type-parent"><a href="#">女装</a></h5>
-                        <h5 class="pro-type-child">
-                            <a href="#">打底裤</a>
-                            <a href="#">卫衣</a>
-                            <a href="#">打底裤</a>
-                        </h5>
-                    </div>
-                </li>
-            </ul> --}}
-
             <ul class="menu pull-left">
                 {{#each nav}}
                 <li class="menu-li">
                     <div class="pro-type-block">
                         {{#each this.Parent}}
-                            <h5 class="pro-type-parent">
-                                <a href="{{this.url}}">{{this.name}}</a>
-                            </h5>
-                            <h5 class="pro-type-child">
-                                {{#each this.childtype}}
-                                    <a href="{{this.url}}">{{this.name}}</a>
-                                {{/each}}
-                            </h5>
+                        <div class="pro-type-parent">
+                            <a href="{{this.url}}">{{this.name}}</a>
+                        </div>
+                        <div class="pro-type-child">
+                            {{#each this.childtype}}
+                            <a href="{{this.url}}">{{this.name}}</a> {{/each}}
+                        </div>
                         {{/each}}
                     </div>
                     <div class="menu-con">
                         <div class="pro-left pull-left">
                             {{#each this.Child}}
                             <div class="pro-type-block">
-                                <h5 class="pro-type-parent">
+                                <div class="pro-type-parent">
                                     <a href="{{this.url}}">{{this.name}}</a>
-                                </h5>
-                                <h5 class="pro-type-child">
+                                </div>
+                                <div class="pro-type-child">
                                     {{#each this.childtype}}
-                                        <a href="{{this.url}}">{{this.name}}</a>
-                                    {{/each}}
-                                </h5>
+                                    <a href="{{this.url}}">{{this.name}}</a> {{/each}}
+                                </div>
                             </div>
                             {{/each}}
                         </div>
                         <div class="pro-right pull-left">
                             <div class="pro-type-block">
-                                <h5 class="pro-type-parent">推荐商家</h5>
-                                <h5 class="pro-type-child">
+                                <div class="pro-type-parent">推荐商家</div>
+                                <div class="pro-type-child">
                                     {{#each this.Recommend}}
-                                        <span><a href="{{this.url}}">{{this.name}}</a></span>
-                                    {{/each}}
-                                </h5>
-                            </div>
-                        </div>
-=======
-<div class="banner-con clearfix">
-    <ul class="menu pull-left">
-        {{#each nav}}
-        <li class="menu-li">
-            <div class="pro-type-block">
-                {{#each this.Parent}}
-                <div class="pro-type-parent">
-                    <a href="{{this.url}}">{{this.name}}</a>
-                </div>
-                <div class="pro-type-child">
-                    {{#each this.childtype}}
-                    <a href="{{this.url}}">{{this.name}}</a>
-                    {{/each}}
-                </div>
-                {{/each}}
-            </div>
-            <div class="menu-con">
-                <div class="pro-left pull-left">
-                    {{#each this.Child}}
-                    <div class="pro-type-block">
-                        <div class="pro-type-parent">
-                            <a href="{{this.url}}">{{this.name}}</a>
-                        </div>
-                        <div class="pro-type-child">
-                            {{#each this.childtype}}
-                            <a href="{{this.url}}">{{this.name}}</a>
-                            {{/each}}
-                        </div>
-                    </div>
-                    {{/each}}
-                </div>
-                <div class="pro-right pull-left">
-                    <div class="pro-type-block">
-                        <div class="pro-type-parent">推荐商家</div>
-                        <div class="pro-type-child">
-                            {{#each this.Recommend}}
-                            <span>
+                                    <span>
                                 <a href="{{this.url}}">{{this.name}}</a>
-                            </span>
-                            {{/each}}
-                        </div>
->>>>>>> b9190b28281b8b0d8480688e6e9fffd5116d49be
-                    </div>
+                            </span> {{/each}}
+                                </div>
+
+                            </div>
                 </li>
                 {{/each}}
             </ul>
+            </div>
+
+            </div>
         </div>
 
     </div>
 </div>
-
-
-
