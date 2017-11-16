@@ -57,16 +57,20 @@ body {
 .home {
   min-height: 400px;
 }
+.banner-con {
+  margin-bottom: 10px;
+}
 .banner-con .menu {
   position: relative;
   width: 220px;
   height: 450px;
+  margin-left: -100%;
   z-index: 777;
 }
 .banner-con .menu .menu-li {
   padding: 15px 0 0 20px;
   width: 217px;
-  height: 74px;
+  height: 75px;
   background: #fff;
   border-left: 3px solid #fff;
   border-bottom: 1px dashed #ddd;
@@ -113,7 +117,7 @@ body {
   top: 0;
   left: 216px;
   width: 710px;
-  height: 445px;
+  height: 450px;
   border: 1px solid #ddd;
   background: #fafafa;
 }
@@ -154,4 +158,27 @@ body {
 }
 .banner-con .menu .menu-li .menu-con .pro-right .pro-type-block .pro-type-child span a {
   padding: 1px 0;
+}
+.banner-con .banner {
+  width: 100%;
+}
+.banner-con .banner .inner {
+  margin-left: 220px;
+  margin-right: 260px;
+}
+.banner-con .banner .inner .rob {
+  width: 710px;
+  padding: 10px;
+}
+.banner-con .banner .inner .rob .row {
+  margin: 0;
+  padding: 15px;
+  background: #fff;
+}
+.banner-con .dynamic {
+  width: 260px;
+  margin-left: -260px;
+}
+.banner-con .dynamic .dynamic-min {
+  margin-top: 10px;
 }

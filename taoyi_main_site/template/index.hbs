@@ -1,8 +1,24 @@
 <div class="wrapper">
     <div class="container">
         <div class="banner-con clearfix">
-            {{!-- 左侧导航 --}}
-            {{> component/sidebar }}
+            {{!-- 焦点图 --}}
+            <div class="banner pull-left">
+                <div class="inner">
+                    <div><img src="assets/images/temp/5.jpeg" alt=""></div>
+                    <div class="rob">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/3.png" alt=""></div>
+                            <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/3.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- 左侧导航 --}} {{> component/sidebar }}
+            {{!-- 动态 --}}
+            <div class="dynamic pull-left">
+                <div class="dynamic-d"><img src="assets/images/temp/2.png" alt=""></div>
+                <div class="dynamic-min"><img src="assets/images/temp/4.png" alt=""></div>
+            </div>
         </div>
 
         {{!--
@@ -107,16 +123,13 @@
                 </div>
             </div>
         </div>
-        {{!-- 批发市场 --}}
-        {{#each woman}}
+        {{!-- 批发市场 --}} {{#each woman}}
         <div class="market-class qf">
             <div class="row">
                 {{> component/proMarket }} {{> component/hotRank }}
             </div>
         </div>
-        {{/each}} 
-        {{!-- 批发市场 --}}
-        {{#each man}}
+        {{/each}} {{!-- 批发市场 --}} {{#each man}}
         <div class="market-class qf">
             <div class="row">
                 {{> component/proMarket }} {{> component/hotRank }}

@@ -11,17 +11,19 @@ body{
 }
 
 .banner-con{
+  margin-bottom: 10px;
   // 侧边菜单导航
   .menu{
     position: relative;
     width: 220px;
     height: 450px;
+    margin-left: -100%;
     z-index: 777;
 
     .menu-li{
       padding: 15px 0 0 20px;
       width: 217px;
-      height: 74px;
+      height: 75px;
       background: #fff;
       border-left: 3px solid #fff;
       border-bottom: 1px dashed #ddd;
@@ -70,7 +72,7 @@ body{
         top: 0;
         left: 216px;
         width: 710px;
-        height: 445px;
+        height: 450px;
         border: 1px solid #ddd;
         background: #fafafa;
         .pro-left{
@@ -116,4 +118,31 @@ body{
       }
     }
   }
+  //焦点图
+  .banner{
+    width: 100%;
+    .inner{
+      margin-left: 220px;
+      margin-right: 260px;
+      .rob{
+        width: 710px;
+        padding: 10px;
+        .row{
+          margin: 0;
+          padding: 15px;
+          background: #fff;
+        }
+      }
+    }
+  }
+  //公告
+  .dynamic{
+    width: 260px;
+    margin-left: -260px;
+
+    .dynamic-min{
+      margin-top: 10px; 
+    }
+  }
+
 }
