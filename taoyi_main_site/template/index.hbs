@@ -1,55 +1,12 @@
-{{!-- {{#hehe}} 
-{{> component/tt }} 
-{{/hehe}}  --}}
-{{!-- {{#yo}} {{> tt }} {{/yo}} {{#she}} {{> tt }} {{/she}} --}}
 <div class="wrapper">
     <div class="container">
         <div class="banner-con clearfix">
-            <ul class="menu pull-left">
-                {{#each nav}}
-                <li class="menu-li">
-                    <div class="pro-type-block">
-                        {{#each this.Parent}}
-                        <div class="pro-type-parent">
-                            <a href="{{this.url}}">{{this.name}}</a>
-                        </div>
-                        <div class="pro-type-child">
-                            {{#each this.childtype}}
-                            <a href="{{this.url}}">{{this.name}}</a> {{/each}}
-                        </div>
-                        {{/each}}
-                    </div>
-                    <div class="menu-con">
-                        <div class="pro-left pull-left">
-                            {{#each this.Child}}
-                            <div class="pro-type-block">
-                                <div class="pro-type-parent">
-                                    <a href="{{this.url}}">{{this.name}}</a>
-                                </div>
-                                <div class="pro-type-child">
-                                    {{#each this.childtype}}
-                                    <a href="{{this.url}}">{{this.name}}</a> {{/each}}
-                                </div>
-                            </div>
-                            {{/each}}
-                        </div>
-                        <div class="pro-right pull-left">
-                            <div class="pro-type-block">
-                                <div class="pro-type-parent">推荐商家</div>
-                                <div class="pro-type-child">
-                                    {{#each this.Recommend}}
-                                    <span>
-                                <a href="{{this.url}}">{{this.name}}</a>
-                            </span> {{/each}}
-                                </div>
-
-                            </div>
-                </li>
-                {{/each}}
-            </ul>
+            {{!-- 左侧导航 --}}
+            {{> component/sidebar }}
         </div>
 
-        {{!-- <div class="bannerbox">
+        {{!--
+        <div class="bannerbox">
             <div class="row">
                 <div class="col-sm-2 menu"><img src="assets/images/temp/1.png" alt=""></div>
                 <div class="col-sm-7 col-xs-9 banner">
@@ -150,20 +107,19 @@
                 </div>
             </div>
         </div>
+        {{!-- 批发市场 --}}
         {{#each woman}}
         <div class="market-class qf">
             <div class="row">
-                {{> component/proMarket }}
-                {{> component/hotRank }}
+                {{> component/proMarket }} {{> component/hotRank }}
             </div>
         </div>
-        {{/each}}
-
+        {{/each}} 
+        {{!-- 批发市场 --}}
         {{#each man}}
         <div class="market-class qf">
             <div class="row">
-                {{> component/proMarket }}
-                {{> component/hotRank }}
+                {{> component/proMarket }} {{> component/hotRank }}
             </div>
         </div>
         {{/each}}
