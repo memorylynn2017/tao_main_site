@@ -22,7 +22,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="datetimepicker" style="width: 100px; height: 28px; border: 1px solid #ddd;"></div>
+
+            <div class="datetimepicker" style="width: 140px; height: 32px; border: 1px solid #ddd;border-radius: 5px;position: relative;top:0px;left: -20px;">
+                <input value="2017-11-16" type="date" style="width: 138px;height: 30px;border: none;background: #fff url(assets/images/datePicker.gif) no-repeat right;text-align:center">
+            </div>
             <a href="javascript:;" role="button" class="btn btn-sm btn-danger">查看</a>
             <a href="javascript:;" role="button" class="btn btn-sm btn-danger">今天</a>
             <a href="javascript:;" role="button" class="btn btn-sm btn-danger">前一天</a>
@@ -40,7 +43,7 @@
     </div>
     <div class="contentbox" id="contentbox">
         <ul class="qf">
-             {{#each list}}
+            {{#each list}}
             <li class="productitem">
                 <a href="{{url}}">
                     <dl class="item-content">
