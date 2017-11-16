@@ -1,0 +1,89 @@
+{
+    "status": true,
+    "data": [
+        {
+            "title": "女装",
+            "coverUrl": "http://www.taoee.com/upload/image/eab151fe00a840f89deeac3a1c3a8eed.png",
+            "market": [
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/f90e548d0d134794b2f7bc4c689747ba.jpg",
+                "des": "圆领短袖T+高腰背带裙 套装",
+                "price": "56.00"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/04bd169a7cdb44698211fe797005ddcd.jpg",
+                "des": "韩版雪纺上衣名媛阔腿裤两件套时尚洋气套装女夏",
+                "price": "45.00"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/f90e548d0d134794b2f7bc4c689747ba.jpg",
+                "des": "圆领短袖T+高腰背带裙 套装",
+                "price": "56.00"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/04bd169a7cdb44698211fe797005ddcd.jpg",
+                "des": "韩版雪纺上衣名媛阔腿裤两件套时尚洋气套装女夏",
+                "price": "45.00"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/f90e548d0d134794b2f7bc4c689747ba.jpg",
+                "des": "圆领短袖T+高腰背带裙 套装",
+                "price": "56.00"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/f90e548d0d134794b2f7bc4c689747ba.jpg",
+                "des": "圆领短袖T+高腰背带裙 套装",
+                "price": "56.00"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/04bd169a7cdb44698211fe797005ddcd.jpg",
+                "des": "韩版雪纺上衣名媛阔腿裤两件套时尚洋气套装女夏",
+                "price": "45.00"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://www.taoee.com/upload/image/f90e548d0d134794b2f7bc4c689747ba.jpg",
+                "des": "圆领短袖T+高腰背带裙 套装",
+                "price": "56.00"
+                }
+            ],
+            "rank": [
+                {
+                "url": "javascript:;",
+                "img": "http://gd1.alicdn.com/bao/uploaded/i1/TB1D11rHXXXXXbtXXXXXXXXXXXX_!!0-item_pic.jpg",
+                "des": "9188#2015夏装新款雪纺花色开衫防晒雪纺衫",
+                "price": "56.00",
+                "num": "1024"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://gd1.alicdn.com/bao/uploaded/i1/76897593/TB2lplunVXXXXaTXpXXXXXXXXXX_!!76897593.jpg",
+                "des": "6814*韩版显瘦蕾丝拼接荷叶袖条纹衬衫",
+                "price": "45.00",
+                "num": "1024"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://gd1.alicdn.com/bao/uploaded/i1/TB1D11rHXXXXXbtXXXXXXXXXXXX_!!0-item_pic.jpg",
+                "des": "9188#2015夏装新款雪纺花色开衫防晒雪纺衫",
+                "price": "56.00",
+                "num": "1024"
+                },
+                {
+                "url": "javascript:;",
+                "img": "http://gd1.alicdn.com/bao/uploaded/i1/76897593/TB2lplunVXXXXaTXpXXXXXXXXXX_!!76897593.jpg",
+                "des": "6814*韩版显瘦蕾丝拼接荷叶袖条纹衬衫",
+                "price": "45.00",
+                "num": "1024"
+                }
+            ]
+        }
+    ]
+}

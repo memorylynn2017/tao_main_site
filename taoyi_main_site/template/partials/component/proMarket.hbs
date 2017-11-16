@@ -1,0 +1,29 @@
+{{!-- 产品批发市场（首页） --}}
+<div class="col-sm-9 col-xs-12 market-left fl">
+    <h3 class="left-title qf">
+        <span class="name">{{this.title}}批发市场</span>
+        <span class="warnmsg"><i></i>新款推荐</span>
+        <ul class="typedetail fr">
+            <li><a href="javascript:;">外套</a></li>
+            <li><a href="javascript:;">连衣裙</a></li>
+            <li><a href="javascript:;">更多</a></li>
+        </ul>
+    </h3>
+    <div class="left-content">
+        <div class="row">
+            <ul class="qf">
+                {{#each this.market}}
+                <li class="list col-md-3 col-sm-4 col-xs-4">
+                    <a href="{{url}}">
+                        <div>
+                            <img src="{{img}}">
+                            <p>{{des}}</p>
+                            <p>{{price}}</p>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

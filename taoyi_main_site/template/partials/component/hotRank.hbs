@@ -1,0 +1,21 @@
+{{!-- 热销推荐排行（首页） --}}
+<div class="col-sm-3  col-xs-12 market-right fr">
+    <h2>热销{{this.title}}推荐</h2>
+    <div class="swiperimg"><img src="{{this.coverUrl}}" alt=""></div>
+    <h2>本月{{this.title}}排行</h2>
+    <div class="mouthlist">
+        {{#each this.rank}}
+        <dl class="qf">
+            <a href="{{url}}">
+                <dt class="fl">
+                    <img src="{{img}}">
+                </dt>
+                <dd>
+                    <p class="txt">{{des}}</p>
+                    <p><span>¥{{price}}</span>批发 {{num}}件</p>
+                </dd>
+            </a>
+        </dl>
+        {{/each}}
+    </div>
+</div>
