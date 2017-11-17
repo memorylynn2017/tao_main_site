@@ -3,7 +3,6 @@
 
         {{!-- 模块一 start--}}
         <div class="banner-con clearfix">
-            {{!--第一部分：中部 焦点图 及轮播图--}}
             <div class="banner pull-left">
                 <div class="inner">
                     <div>
@@ -21,9 +20,7 @@
                     </div>
                 </div>
             </div>
-            {{!--第二部分：左部 左侧导航 --}}
-                {{> component/sidebar }} {{!-- 动态 --}} 
-            {{!-- 第三部分：右部 右侧登陆及公告等位 --}}
+            {{> component/sidebar }}
             <div class="dynamic pull-left">
                 <div class="dynamic-d">
                     <img src="assets/images/temp/2.png" alt="">
@@ -33,11 +30,7 @@
                 </div>
             </div>
         </div>
-        
-        {{!-- 模块一 end --}}
 
-
-        {{!-- 模块二 start--}}
         <div class="activity-door">
             <div class="row">
                 <div class="col-sm-2 col-xs-4 left">
@@ -62,10 +55,7 @@
                 </div>
             </div>
         </div>
-        {{!-- 模块二 end --}}
 
-
-        {{!--
         <div class="sentiment">
             <div class="title qf">
                 <span>淘艺
@@ -176,13 +166,14 @@
                     </p>
                 </div>
             </div>
-        </div> --}} {{!-- 批发市场 --}} {{#each woman}}
+        </div>
+        {{#each woman}}
         <div class="market-class qf">
             <div class="row">
                 {{> component/proMarket }} {{> component/hotRank }}
             </div>
         </div>
-        {{/each}} {{!-- 批发市场 --}} {{#each man}}
+        {{/each}} {{#each man}}
         <div class="market-class qf">
             <div class="row">
                 {{> component/proMarket }} {{> component/hotRank }}
