@@ -1,0 +1,64 @@
+.market-class .market-left {
+  padding: 15px 20px;
+  border-right: 1px solid #ddd;
+}
+.market-class .market-left .left-title {
+  padding-bottom: 15px;
+}
+.market-class .market-left .left-title .name {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: bold;
+}
+.market-class .market-left .left-title .warnmsg {
+  display: inline-block;
+  padding: 0px 5px;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: super;
+  background: #ff6eab;
+  border-radius: 2px;
+  margin-left: 30px;
+  position: relative;
+}
+.market-class .market-left .left-title .warnmsg i {
+  width: 0;
+  border: 6px solid transparent;
+  border-right-color: #ff6eab;
+  position: absolute;
+  top: 4px;
+  left: -12px;
+}
+.market-class .market-left .left-title .typedetail {
+  margin-top: 14px;
+}
+.market-class .market-left .left-title .typedetail li {
+  float: left;
+  padding: 0 5px;
+  line-height: 14px;
+  border-right: 1px solid #ddd;
+}
+.market-class .market-left .left-title .typedetail li a {
+  font-size: 14px;
+  color: #666;
+}
+.market-class .market-left .left-content ul .list {
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+}
+.market-class .market-left .left-content ul .list div img {
+  width: 100%;
+}
+.market-class .market-left .left-content ul .list div p {
+  width: 100%;
+  height: 20px;
+  color: #666;
+  line-height: 20px;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

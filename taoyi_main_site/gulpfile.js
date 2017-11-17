@@ -3,9 +3,12 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     autoprefixer = require('gulp-autoprefixer');	//前缀的后处理程序
 
+var paths = {
+    less: ['./static/assets/less/*.less','./static/assets/less/**/*.less']
+}
 // 压缩 less
 gulp.task('less', function () {
-    return gulp.src('./static/assets/less/*.less')
+    return gulp.src(paths.less)
     .pipe(less())
     .pipe(autoprefixer({
         browsers: ['last 2 versions', 'Android >= 4.0'],
@@ -19,7 +22,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('watch', function(){
-	gulp.watch('./static/assets/less/*.less',['less']);
+	gulp.watch(paths.less,['less']);
 })
 
 //定义默认任务

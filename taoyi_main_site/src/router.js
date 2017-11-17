@@ -47,6 +47,10 @@ router.get("/shop/clearStore", function (req, res, next) {
 router.get("/shop/product_infolist/:id", function (req, res, next) {
   res.render("shop/product_infolist");
 });
+//产品详情页
+router.get("/shop/product_content/:id", function (req, res, next) {
+  res.render("shop/product_content");
+});
 
 
 //跳转到搜索页面

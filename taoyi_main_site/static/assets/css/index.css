@@ -1,0 +1,31 @@
+body {
+  background: #f4f3f4;
+  color: #666;
+  font-size: 12px;
+}
+.banner-con {
+  margin-bottom: 10px;
+}
+.banner-con .banner {
+  width: 100%;
+}
+.banner-con .banner .inner {
+  margin-left: 220px;
+  margin-right: 260px;
+}
+.banner-con .banner .inner .rob {
+  width: 710px;
+  padding: 10px;
+}
+.banner-con .banner .inner .rob .row {
+  margin: 0;
+  padding: 15px;
+  background: #fff;
+}
+.banner-con .dynamic {
+  width: 260px;
+  margin-left: -260px;
+}
+.banner-con .dynamic .dynamic-min {
+  margin-top: 10px;
+}

@@ -1,0 +1,31 @@
+.dayupdate .searchbox {
+  padding: 16px 0;
+}
+.dayupdate .searchbox .left .dropdown,
+.dayupdate .searchbox .left .datetimepicker,
+.dayupdate .searchbox .left .btn {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.dayupdate .searchbox .numall {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+  vertical-align: top;
+}
+.dayupdate .contentbox {
+  margin: 0 -5px;
+}
+.dayupdate .contentbox .productitem {
+  width: 20%;
+  float: left;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .dayupdate .contentbox .productitem {
+    width: 33.3%;
+  }
+}

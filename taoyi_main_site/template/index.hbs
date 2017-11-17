@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/assets/css/index.css">
 <div class="wrapper">
     <div class="container">
         <div class="banner-con clearfix">
@@ -126,13 +127,13 @@
         {{!-- 批发市场 --}} {{#each woman}}
         <div class="market-class qf">
             <div class="row">
-                {{> component/proMarket }} {{> component/hotRank }}
+                {{> component/market_pro }} {{> component/market_rank }}
             </div>
         </div>
         {{/each}} {{!-- 批发市场 --}} {{#each man}}
         <div class="market-class qf">
             <div class="row">
-                {{> component/proMarket }} {{> component/hotRank }}
+                {{> component/market_pro }} {{> component/market_rank }}
             </div>
         </div>
         {{/each}}

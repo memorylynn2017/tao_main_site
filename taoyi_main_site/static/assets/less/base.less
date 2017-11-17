@@ -1,125 +1,10 @@
-body {font-size: 12px;}
-div {box-sizing: border-box;}
+
+//批发市场
 .market-class {
   width: 100%;
   margin-top: 70px;
   border: 1px solid #ddd;
-  .market-left {
-    padding: 15px 20px;
-    border-right: 1px solid #ddd;
-    .left-title {
-      padding-bottom: 15px;
-      .name {
-        font-size: 1.6rem;
-        color: #000;
-        font-weight: bold;
-      }
-      .warnmsg {
-        display: inline-block;
-        padding: 0px 5px;
-        color: #fff;
-        height: 20px;
-        line-height: 20px;
-        vertical-align: super;
-        background: #ff6eab;
-        border-radius: 2px;
-        margin-left: 30px;
-        position: relative;
-        i {
-          width: 0;
-          border: 6px solid transparent;
-          border-right-color: #ff6eab;
-          position: absolute;
-          top: 4px;
-          left: -12px;
-        }
-      }
-      .typedetail {
-        margin-top: 14px;
-        li {
-          float: left;
-          padding: 0 5px;
-          line-height: 14px;
-          border-right: 1px solid #ddd;
-          a {
-            font-size: 14px;
-            color: #666;
-          }
-        }
-      }
-    }
-    .left-content {
-      ul .list {
-        padding: 0 10px;
-        box-sizing: border-box;
-        float: left;
-        div {
-          img {width: 100%;}
-          p {
-            width: 100%;
-            height: 20px;
-            color: #666;
-            line-height: 20px;
-            margin-top: 10px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-          }
-        }
-      }
-    }
-  }
-  .market-right {
-    padding: 0 20px;
-    box-sizing: border-box;
-    background: #fff;
-    h2 {
-      font-size: 1.3rem;
-      color: #666;
-      line-height: 60px;
-      font-weight: 100;
-    }
-    .swiperimg {
-      img {width: 100%;}
-    }
-    .mouthlist {
-      dl {
-        padding: 15px 0 0 71px;
-        margin-bottom: 13px;
-        border-top: 1px dotted #ddd;
-        position: relative;
-        dt {
-          width: 46px;
-          height: 46px;
-          position: absolute;
-          top: 15px;
-          left: 15px;
-          margin-right: 10px;
-          img {width: 100%;}
-        }
-      }
-      dd {
-        p {
-          width: 100%;
-          height: 24px;
-          color: #999;
-          line-height: 24px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          &.txt {
-            color: #666;
-          }
-          span {
-            margin-right: 5px;
-            color: #ff6699;
-          }
-        }
-      }
-    }
-  }
 }
-
 
 .wrapper {
   .container {
@@ -158,6 +43,7 @@ div {box-sizing: border-box;}
       display: none;
     }
   }
+  //广告块
   .activity-door {
     border: 1px solid #ddd;
     margin-bottom: 10px;
@@ -179,6 +65,7 @@ div {box-sizing: border-box;}
       display: none;
     }
   }
+  //陶艺推荐
   .sentiment {
     .title {
       background: #fff;
@@ -251,6 +138,7 @@ div {box-sizing: border-box;}
   }
 }
 
+//图片块（用于“每日新款”，）
 .productitem {
   &:hover .item-content {
     background: #ddd;
@@ -307,35 +195,4 @@ div {box-sizing: border-box;}
     }
   }
 }
-.dayupdate {
-  .searchbox {
-    padding: 16px 0;
-    .left {
-      .dropdown,.datetimepicker,.btn {
-        display: inline-block;
-        margin-right: 10px;
-        vertical-align: top;
-      }
-    }
-    .numall {
-      display: inline-block;
-      font-size: 14px;
-      line-height: 28px;
-      vertical-align: top;
-    }
-  }
-  .contentbox {
-    margin: 0 -5px;
-    .productitem {
-      width: 20%;
-      float: left;
-      padding: 5px;
-      box-sizing: border-box;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .dayupdate .contentbox .productitem {
-    width: 33.3%;
-  }
-}
+
