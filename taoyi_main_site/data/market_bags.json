@@ -1,0 +1,81 @@
+{
+  "status": true,
+  "data": [
+    {
+      "title": "箱包",
+      "coverUrl":
+        "http://www.taoee.com/upload/image/d029fe338ce9435487501b4fb4d1203d.jpg",
+      "market": [
+        {
+          "url": "javascript:;",
+          "img":
+            "http://www.taoee.com/upload/image/ee1ecba41c224e02854400c97f8dee48.jpg",
+          "des": "花朵撞色手提单肩包斜跨女包包百搭时尚休闲包1702",
+          "price": "45.00"
+        },
+        {
+          "url": "javascript:;",
+          "img":
+            "http://www.taoee.com/upload/image/77aea6c28bea4726a82bc951e186917d.jpg",
+          "des": "女包2新款老花水桶包迷你双肩包韩版单肩小包包百搭复古斜跨包#",
+          "price": "49.00"
+        },
+        {
+          "url": "javascript:;",
+          "img": "http://www.taoee.com/upload/image/ee1ecba41c224e02854400c97f8dee48.jpg",
+          "des": "花朵撞色手提单肩包斜跨女包包百搭时尚休闲包1702",
+          "price": "45.00"
+        },
+        {
+          "url": "javascript:;",
+          "img": "http://www.taoee.com/upload/image/77aea6c28bea4726a82bc951e186917d.jpg",
+          "des": "女包2新款老花水桶包迷你双肩包韩版单肩小包包百搭复古斜跨包#",
+          "price": "49.00"
+        },
+        {
+          "url": "javascript:;",
+          "img": "http://www.taoee.com/upload/image/ee1ecba41c224e02854400c97f8dee48.jpg",
+          "des": "花朵撞色手提单肩包斜跨女包包百搭时尚休闲包1702",
+          "price": "45.00"
+        },
+        {
+          "url": "javascript:;",
+          "img": "http://www.taoee.com/upload/image/77aea6c28bea4726a82bc951e186917d.jpg",
+          "des": "女包2新款老花水桶包迷你双肩包韩版单肩小包包百搭复古斜跨包#",
+          "price": "49.00"
+        },
+        {
+          "url": "javascript:;",
+          "img": "http://www.taoee.com/upload/image/ee1ecba41c224e02854400c97f8dee48.jpg",
+          "des": "花朵撞色手提单肩包斜跨女包包百搭时尚休闲包1702",
+          "price": "45.00"
+        },
+        {
+          "url": "javascript:;",
+          "img": "http://www.taoee.com/upload/image/77aea6c28bea4726a82bc951e186917d.jpg",
+          "des": "女包2新款老花水桶包迷你双肩包韩版单肩小包包百搭复古斜跨包#",
+          "price": "49.00"
+        }
+       
+      ],
+      "rank": [
+        {
+          "url": "javascript:;",
+          "img":
+            "http://gd1.alicdn.com/imgextra/i1/2134450839/TB2G7HBhwJlpuFjSspjXXcT.pXa_!!2134450839.jpg",
+          "des": "新款单肩包时尚潮流斜挎包百搭女生手提包女包包1320",
+          "price": "33.00",
+          "num": "1024"
+        },
+        {
+          "url": "javascript:;",
+          "img":
+            "http:////gd1.alicdn.com/bao/uploaded/i1/T1q.P.FKJXXXXXXXXX_!!0-item_pic.jpg",
+          "des": "休闲街头随性百搭牛仔大包包9896#",
+          "price": "20.00",
+          "num": "1024"
+        }
+      ]
+    }
+  ]
+}
