@@ -26,6 +26,11 @@ router.get("/login", require("../src/controllers/user_controllers").login);
 //每日一款
 router.get('/shop/dailyNew', require('../src/controllers/shop_controllers').dailyNew);
 
+//商品详情页
+router.get("/shop/productDetail", function (req, res, next) {
+  res.render("shop/productDetail");
+});
+
 //逛市场
 router.get("/shop/seller", function (req, res, next) {
   res.render("shop/seller");
