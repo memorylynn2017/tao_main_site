@@ -1,58 +1,76 @@
 <div class="wrapper">
     <div class="container">
+
+        {{!-- 模块一 start--}}
         <div class="banner-con clearfix">
-            {{!-- 焦点图 --}}
+            {{!--第一部分：中部 焦点图 及轮播图--}}
             <div class="banner pull-left">
                 <div class="inner">
-                    <div><img src="assets/images/temp/5.jpeg" alt=""></div>
+                    <div>
+                        <img src="assets/images/temp/5.jpeg" alt="">
+                    </div>
                     <div class="rob">
                         <div class="row">
-                            <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/3.png" alt=""></div>
-                            <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/3.png" alt=""></div>
+                            <div class="col-sm-6 col-xs-6">
+                                <img src="assets/images/temp/3.png" alt="">
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <img src="assets/images/temp/3.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {{!-- 左侧导航 --}} {{> component/sidebar }}
-            {{!-- 动态 --}}
+            {{!--第二部分：左部 左侧导航 --}}
+                {{> component/sidebar }} {{!-- 动态 --}} 
+            {{!-- 第三部分：右部 右侧登陆及公告等位 --}}
             <div class="dynamic pull-left">
-                <div class="dynamic-d"><img src="assets/images/temp/2.png" alt=""></div>
-                <div class="dynamic-min"><img src="assets/images/temp/4.png" alt=""></div>
+                <div class="dynamic-d">
+                    <img src="assets/images/temp/2.png" alt="">
+                </div>
+                <div class="dynamic-min">
+                    <img src="assets/images/temp/4.png" alt="">
+                </div>
             </div>
         </div>
+        
+        {{!-- 模块一 end --}}
 
-        {{!--
-        <div class="bannerbox">
-            <div class="row">
-                <div class="col-sm-2 menu"><img src="assets/images/temp/1.png" alt=""></div>
-                <div class="col-sm-7 col-xs-9 banner">
-                    <div><img src="assets/images/temp/5.jpeg" alt=""></div>
-                    <div class="row rob">
-                        <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/3.png" alt=""></div>
-                        <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/3.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-3 dynamic">
-                    <div class="dynamic-d"><img src="assets/images/temp/2.png" alt=""></div>
-                    <div class="dynamic-min"><img src="assets/images/temp/4.png" alt=""></div>
-                </div>
-            </div>
-        </div> --}}
+
+        {{!-- 模块二 start--}}
         <div class="activity-door">
             <div class="row">
-                <div class="col-sm-2 col-xs-4 left"><img src="assets/images/temp/6.jpg" alt=""></div>
-                <div class="col-sm-5 col-xs-8 center">
-                    <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/7.png" alt=""></div>
-                    <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/7.png" alt=""></div>
-                    <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/7.png" alt=""></div>
-                    <div class="col-sm-6 col-xs-6"><img src="assets/images/temp/7.png" alt=""></div>
+                <div class="col-sm-2 col-xs-4 left">
+                    <img src="assets/images/temp/6.jpg" alt="">
                 </div>
-                <div class="col-sm-5 right"><img src="assets/images/temp/8.jpg" alt=""></div>
+                <div class="col-sm-5 col-xs-8 center">
+                    <div class="col-sm-6 col-xs-6">
+                        <img src="assets/images/temp/7.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <img src="assets/images/temp/7.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <img src="assets/images/temp/7.png" alt="">
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <img src="assets/images/temp/7.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-5 right">
+                    <img src="assets/images/temp/8.jpg" alt="">
+                </div>
             </div>
         </div>
+        {{!-- 模块二 end --}}
+
+
+        {{!--
         <div class="sentiment">
             <div class="title qf">
-                <span>淘艺<i>推荐</i></span>
+                <span>淘艺
+                    <i>推荐</i>
+                </span>
                 <ul class="qf">
                     <li class="active">优雅淑女</li>
                     <li>欧美外贸</li>
@@ -64,66 +82,101 @@
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
                 <div class="col-sm-2 col-xs-4 product">
                     <img src="assets/images/temp/9.jpg" alt="">
                     <p class="name">实拍 无袖蕾丝连衣裙女夏2017新款时尚显瘦镂空中长款淑女a字裙</p>
-                    <p class="qf"><span class="fl price">￥40.00</span><span class="fl shopname">韩范衣柜</span></p>
+                    <p class="qf">
+                        <span class="fl price">￥40.00</span>
+                        <span class="fl shopname">韩范衣柜</span>
+                    </p>
                 </div>
             </div>
-        </div>
-        {{!-- 批发市场 --}} {{#each woman}}
+        </div> --}} {{!-- 批发市场 --}} {{#each woman}}
         <div class="market-class qf">
             <div class="row">
                 {{> component/proMarket }} {{> component/hotRank }}
