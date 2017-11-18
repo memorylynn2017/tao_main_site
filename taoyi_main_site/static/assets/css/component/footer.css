@@ -13,11 +13,11 @@
   }
 }
 .footer .commitment {
-  background: url(../images/commitment-bj.jpg);
+  background: url(../../images/commitment-bj.jpg);
 }
 .footer .footer-nav {
   height: 190px;
-  background: url(../images/taoee-footer-bg.png) no-repeat center bottom;
+  background: url(../../images/taoee-footer-bg.png) no-repeat center bottom;
 }
 .footer .footer-nav .navbar-lv1 > li {
   width: 160px;

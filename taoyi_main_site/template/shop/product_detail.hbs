@@ -1,0 +1,295 @@
+<link rel="stylesheet" href="/assets/css/page/product_detail.css">
+<link rel="stylesheet" href="/assets/plugins/imagezoom/jqzoom.css">
+<script src="/assets/plugins/imagezoom/jquery.jqzoom.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".jqzoom").jqueryzoom({
+            xzoom: 400, //放大图的宽度(默认是 200)
+            yzoom: 400, //放大图的高度(默认是 200)
+            offset: 10, //离原图的距离(默认是 10)
+            position: "right", //放大图的定位(默认是 "right")
+            preload: 1
+        });
+        $("#preview-scroll .items li").mouseover(function(){
+            $(this).addClass("on").siblings().removeClass("on");
+            //赋值属性
+            $("#bigImg").attr('src',$(this).find("img").attr("src"));
+            $("#bigImg").attr('jqimg',$(this).find("img").attr("bimg"));
+        });
+        $("#preview-scroll .items li:eq(0)").mouseover();
+    });
+
+</script>
+<div class="product-detail">
+    <div class="container">
+        {{!-- 分类导航 --}}
+        <div class="blockNav">
+            <a href="/">淘亿批发</a>/<a href="/shop/dailyNew">全部商品</a>/
+            <!--当前所在分类路径-->
+            <a href="/shop/product_infolist/123">女装</a>
+            <a href="/shop/product_infolist/123">外套</a>
+        </div>
+
+        {{!-- 产品主体 --}}
+        {{#each detail}}
+        <div class="main clearfix">
+            <div class="left pull-left">
+                <div id="preview" class="clearfix">
+                    <div class="jqzoom">
+                        {{#each preview}}
+                            {{#isfirst @index}}
+                                <img id="bigImg" src="{{simg}}" alt="" jqimg="{{bimg}}" />
+                            {{/isfirst}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div id="preview-scroll" class="preview-scroll">
+                    <div class="items">
+                        <ul class="clearfix">
+                            {{!-- <li class="on"><img src="https://img.alicdn.com/bao/uploaded/i1/1867539102/TB181MedgvD8KJjy0FlXXagBFXa_!!0-item_pic.jpg" bimg="images/02.jpg"></li> --}}
+                            {{#each preview}}
+                                <li><img src="{{simg}}" bimg="{{bimg}}"></li>
+                                {{!-- {{#isfirst @index}}
+                                    <li class="on"><img src="{{simg}}" bimg="{{bimg}}"></li>
+                                {{else}}
+                                    <li><img src="{{simg}}" bimg="{{bimg}}"></li>
+                                {{/isfirst}} --}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="center pull-left">
+                {{!-- 商品名称 --}}
+                <div class="productName">{{this.name}}</div>
+                <div class="productPrice">
+                    <div class="item pull-left"><span>批发价</span><strong class="c-red fs-24">￥{{this.cheapPrice}}</strong></div>
+                    <div class="item pull-left">
+                        <span>VIP价</span>
+                        <strong><font id="loginedDisplay">（登录后显示）</font></strong>
+                        <strong><font id="vipPrice" style="display:none" class="c-red fs-24">￥{{this.vipPrice}}</font></strong>
+                    </div>
+                    <div class="item pull-left"><span>淘宝价</span><strong class="c-gray fs-16">￥{{this.taobaoPrice}}</strong></div>
+                </div>
+                {{!-- 商品运费显示 --}}
+                <div class="productEvaluateNum fs-13">
+                    {{!-- 商品评分 --}}
+                    <div class="stars pull-left"><i class="s0"></i></div>
+                    {{!-- 判断是否有人评论 --}}
+                    <span class="pull-left">0人评价</span>
+                    <span class="pull-left">成交/0件</span>
+                    <span class="pull-left">人气/0</span>
+                    <a class="pull-right" href="#" title="商品页面不正常可点击此按钮更新">商品更新</a>
+                    <a class="pull-right" href="#"><i class="iconfont icon-fangdajing"></i>找同款</a>
+                </div>
+                {{!-- 购买计算块 --}}
+                <div class="productCount">
+                    {{!-- 选择 --}}
+                    <div class="goods-choose">
+                        <div class="item clearfix">
+                            <div class="title pull-left">尺寸</div>
+                            <div class="con pull-left">
+                                <ul class="spec-text">
+                                    <li><a class="s-btn" href="javascript:;">均码</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="title pull-left">颜色分类</div>
+                            <div class="con pull-left">
+                                <ul class="spec-text">
+                                    <li><a class="s-btn on" href="javascript:;">秋色</a></li>
+                                    <li><a class="s-btn" href="javascript:;">黑色</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                            <div class="title pull-left">数量</div>
+                            <div class="con pull-left">
+                                <a href="javascript:void(0)" class="J_minus" onclick="setAmount.reduce('#quantity')"></a>
+                                    <input type="text" value="1" class="J_input" id="quantity" onkeyup="setAmount.modify('#quantity')">
+                                    <a href="javascript:void(0)" onclick="setAmount.add('#quantity')" class="J_add"></a>&nbsp;&nbsp;
+                                    <span id="etalon_show"></span> &nbsp;&nbsp;<span id="much"></span>
+                                    <input type="hidden" id="productEtalonId" value="">
+                            </div>
+                        </div>
+                    </div>
+                    {{!-- 计算 --}}
+                    <div class="operation">
+                        <a href="#" title="加入购物车" class="join" >加入购物车</a>
+                        <a href="javascript:;" title="加入收藏" class="collection">收藏</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right pull-right">
+                <div class="store fs-13">
+                    <h3 class="fs-18"><a href="/shop/seller_store_template!showStore.action?act=homepage&amp;isDisplayCase=1&amp;sellerId=8a2809344d2d9d01014d31ff176c4683"
+                            class="f-l d-b">芭巴巴牛仔</a>
+                    </h3>
+                    <ul>
+                        <li>主营：时尚牛仔女装批发</li>
+                        <li>档口：<a href="/shop/seller_info!index?id=ff8080814a1438de014a1492c09103bc" target="_blank">富丽</a>_1楼_1138</li>
+                        <li>商家类型：C类-其他</li>
+                        <li>款号：10448561560138467</li>
+                        <li>重量：0.5kg</li>
+                        <li>上架时间：2017-11-16 14:42:33</li>
+                    </ul>
+                    <div class="btns row">
+                        <div class="col-sm-4"><a href="#">图片下载</a></div>
+                        <div class="col-sm-4"><a target="_blank" href="https://item.taobao.com/item.htm?id=561560138467">淘宝链接</a></div>
+                        <div class="col-sm-4"><a class="bg-gray" target="_blank" href="http://yddz.zhikr.cn/cloudWeb/demo/taoeetaobao.jsp?url=http://www.taoee.com//html/product_content/201711/561560138467.html?spm=0.0.0.0.h7Jbpn">一键上传</a></div>
+                    </div>
+                    <div class="prompt fs-13"><span class="c-red">提示：</span>该商品由<font>
+                        <a href="http://www.taoee.com">淘亿网</a></font>负责发货，并提供售后服务为了保证您快速、准确地收到商品，建议您在下单前与商家联系或咨询客服，了解确认商品库存等详情。祝您生意兴隆！
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- 产品说明 --}}
+        <div class="content">
+            <div class="left pull-left">
+                <div class="other">
+                    <h2>买过的人还买了</h2>
+                    <ul class="list">
+                        <li><a class="clearfix" href="#" target="_blank">
+                                <div class="cover pull-left"><img src="http://img01.taobaocdn.com/bao/uploaded/i1/17593020633731138/T1Jx4MXDRgXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></div>
+                                <div class="desc pull-left">
+                                    <p>实拍2017秋装新款格子衬衫大码宽松中长款外套</p>
+                                    <p class="c-red">￥43.00</p>
+                                    <p>衣品会服饰</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a class="clearfix" href="#" target="_blank">
+                                <div class="cover pull-left"><img src="http://img01.taobaocdn.com/bao/uploaded/i1/17593020633731138/T1Jx4MXDRgXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></div>
+                                <div class="desc pull-left">
+                                    <p>实拍2017秋装新款格子衬衫大码宽松中长款外套</p>
+                                    <p class="c-red">￥43.00</p>
+                                    <p>衣品会服饰</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a class="clearfix" href="#" target="_blank">
+                                <div class="cover pull-left"><img src="http://img01.taobaocdn.com/bao/uploaded/i1/17593020633731138/T1Jx4MXDRgXXXXXXXX_!!0-item_pic.jpg_300x300.jpg"></div>
+                                <div class="desc pull-left">
+                                    <p>实拍2017秋装新款格子衬衫大码宽松中长款外套</p>
+                                    <p class="c-red">￥43.00</p>
+                                    <p>衣品会服饰</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="browse">
+                    <h2>最近浏览</h2>
+                    <div class="list row">
+                        <div class="col-sm-6"><a href="#"><img title="实拍515#2017新款韩版气质淑女修身无袖显瘦开叉长款背心连衣裙" src="http://gd3.alicdn.com/imgextra/i4/2817334040/TB2.N4DwmFjpuFjSszhXXaBuVXa_!!2817334040.jpg_200x200.jpg"></a></div>
+                        <div class="col-sm-6"><a href="#"><img title="实拍515#2017新款韩版气质淑女修身无袖显瘦开叉长款背心连衣裙" src="http://gd3.alicdn.com/imgextra/i4/2817334040/TB2.N4DwmFjpuFjSszhXXaBuVXa_!!2817334040.jpg_200x200.jpg"></a></div>
+                        <div class="col-sm-6"><a href="#"><img title="实拍515#2017新款韩版气质淑女修身无袖显瘦开叉长款背心连衣裙" src="http://gd3.alicdn.com/imgextra/i4/2817334040/TB2.N4DwmFjpuFjSszhXXaBuVXa_!!2817334040.jpg_200x200.jpg"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right pull-right">
+                <div class="toFixed-no">
+                    <ul class="tab cmm-h-ul">
+                        <li class="s1">商品详情</li>
+                        <li class="s2">成交评价</li>
+                        <li class="s3">商品反馈</li> 
+                    </ul>
+                </div>
+                <div id="showImg">
+                    <ul class="attr-list">
+                        <li title=" 镂空">流行元素: 镂空</li>
+                        <li title=" 1052">货号: 1052</li>
+                        <li title=" 宽松">服装版型: 宽松</li>
+                        <li title=" 中长款">衣长: 中长款</li>
+                        <li title=" 圆领">领型: 圆领</li>
+                        <li title=" 31%(含)-50%(含)">成分含量: 31%(含)-50%(含)</li>
+                        <li title=" 棉">面料: 棉</li>
+                        <li title=" 粗横条纹">图案: 粗横条纹</li>
+                        <li title=" 通勤">风格: 通勤</li>
+                        <li title=" 韩版">通勤: 韩版</li>
+                        <li title=" 2015年夏季">年份季节: 2015年夏季</li>
+                        <li title=" 蓝白条 黑色">主要颜色: 蓝白条 黑色</li>
+                        <li title=" 均码">尺码: 均码</li>
+                    </ul>
+                    <p align="center">尺寸；连肩袖长57&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 胸围106&nbsp;&nbsp;&nbsp;&nbsp; 腰围90&nbsp;&nbsp;&nbsp;&nbsp; 衣长76</p><p align="center">颜色；蓝白条&nbsp;&nbsp;&nbsp;&nbsp; 黑色</p><p align="center">材质；密根丝光棉</p><p align="center"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB26StHcFXXXXa6XXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB2a5pAcFXXXXbtXpXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd3.alicdn.com/imgextra/i3/2332733005/TB27kBKcFXXXXXfXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd4.alicdn.com/imgextra/i4/2332733005/TB2iDRFcFXXXXclXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd3.alicdn.com/imgextra/i3/2332733005/TB2jQBJcFXXXXXFXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd4.alicdn.com/imgextra/i4/2332733005/TB2ZJBIcFXXXXa3XXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB2K_8EcFXXXXc_XXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB21FVGcFXXXXcyXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd4.alicdn.com/imgextra/i4/2332733005/TB2xZREcFXXXXXBXpXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd1.alicdn.com/imgextra/i1/2332733005/TB2eNBCcFXXXXaMXpXXXXXXXXXX_!!2332733005.jpg"></p><!--商品描述-->
+                </div>
+                <div id="tab01-box" class="evaluation">
+                    <h2>买家评价</h2>
+                    <dl class="score">
+                        <dt class="score-left pull-left">
+                            <p class="corange fs-18"><strong class="fw-1">100</strong>%</p>
+                            <p class="fs-14 c-0 stars">
+                                <i class="s5"></i>&nbsp;&nbsp;五星评价率 
+                            </p>
+                        </dt>
+                        <dd class="f-l">
+                            <div class="f-l phrase">
+                            </div>
+                        </dd>
+                    </dl>
+                    <ul class="evaluation-content o-h c-b">
+                        <div id="commentUl">
+                        </div>
+                        <a class="sub bg-fa fs-16 dib c-a005 ta-c" href="javascript:void(0)" id="moreComment">查看更多评价</a>
+                    </ul>
+                </div>
+                <div class="questions">
+                    <h2 class="fw-1">商品反馈</h2>
+                    <form id="questionForm" class="questionForm bg-f3 validate" action="/shop/product_refer!save.action" method="post">
+                        <input type="hidden" name="productId" value="8a2809344e60fe53014e625cb6c924da">
+                        <input type="hidden" name="redirectionUrl" id="redirectionUrl" value="">
+                        
+                        <span class="fs-18 c-0 max-all pull-left">问题描述</span>
+                        <span style="display:none">
+                            <input type="radio" name="productRefer.productReferType" value="1" checked="">商品咨询
+                            <input type="radio" name="productRefer.productReferType" value="2">库存及配送
+                            <input type="radio" name="productRefer.productReferType" value="3">支付问题
+                            <input type="radio" name="productRefer.productReferType" value="4">发票及保修
+                            <input type="radio" name="productRefer.productReferType" value="5">促销及赠品
+                        </span>
+                        <input name="productRefer.productReferContent" class="text  pull-left " type="text" placeholder="您在采购过程中，发现该商品页面有任何问题可提交给我们纠正，谢谢！">
+                        <input class="sub c-red pull-right" type="button" id="questionBtn" value="提交反馈">
+                    </form>
+                    <div id="referUl">
+                    </div>
+                    <a class="sub bg-fa fs-16 dib c-a005 ta-c" href="javascript:void(0)" id="moreQuestion">更多反馈</a>
+                </div>
+                <!--div class="after-sales o-h">
+                    <h2 class="fw-1">售后服务</h2>
+                    <p>一、服装自发货之日起 7 天内，只要商品不影响再次销售，凭签收运单凭证予以退换</p>
+                    <p>二、服装退换时，商品价格上调时，按商品的原价计价，价格下调时，按现价计价</p>
+                    <p>三、服装质量问题范畴：</p>
+                    <p>1. 面料有明显破洞、破损。</p>
+                    <p>2. 有明显大片污渍，大片脏污。</p>
+                    <p>3. 缀饰脱落或钉错，拉链破损。</p>
+                    <p>4. 剪裁版型有误，左右明显不对称（款式原因除外） 如裤管大小、长短不一，口袋上下不一致等。</p>
+                    <p>5. 套装尺码不配套，或发错款式和颜色。</p>
+                    <p>四、不属于质量问题范畴：</p>
+                    <p>1. 异味问题。（有的面料会经过特殊处理可能会有一些异味，一般过水后会消除）</p>  
+                    <p>2. 图片与实物有些色差。（拍摄过程会有颜色偏差，面料裁剪变化使图案变化） </p>
+                    <p>3. 线头没处理干净。</p>
+                    <p>4. 掉色。（一般深色衣服会存在掉色现象，洗过后会减轻或消除，）</p>
+                    <p>5. 淡颜色面料上的微脏。（制作销售过程中可能会带上，可以清洗掉的。）  </p>
+                    <p>6. 面料好坏或者透明程度等。（没有标准，无法确定好坏，请谅解）  </p>
+                    <p>7. 面料本身1CM之内的杂线，布料在生产过程中100%都会有杂色线的情况， 有的可用细小的针尖挑拨。一般不会影响衣服整体的效果。</p>
+                    <p>8. 毛衣少量漏针，不影响穿着。</p>
+                    <p>五、下列情况不予退换：</p>
+                    <p>1.服装经裁剪、水洗、人为损坏或挂裂等；</p>
+                    <p> 2.服装售出时已标明特价、清仓、配件等字样及商家已下架商品；</p>
+                    <p>3.商品过退换期限或无销售凭证的；</p>
+                    <p> 4.未与客服事先沟通填写售后服务单，擅自退回的商品。</p>
+                    <p>5.签货时发现包裹破损未当面与快递人员协商处理的。</p>
+                    <p>六、非质量问题退换货，每件商品收取5元服务费。</p>
+                    <p>七、未尽事项请查阅淘亿服务中心关于售后处理的条款。</p>
+                    <p>• 重要 •</p>
+                    <p>您可能难于理解，为什么质量问题还要您支付退回运费？服装批发利润低廉，快递费基本已接近衣服的价格。   换个角度，您去直接批发市场拿货，有质量问题也是自己拿去档口退换，商家也不会给你报销交通费用！</p>
+                </div-->
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+</div>

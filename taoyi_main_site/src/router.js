@@ -24,14 +24,11 @@ router.get("/", function(req, res, next) {
     brass: market_brass_Data.data,
     bags: market_bags_Data.data
   };
-  res.render("index", options);
+  res.render("home", options);
 });
 
 //跳转到注册页面
-router.get(
-  "/register",
-  require("../src/controllers/user_controllers").register
-);
+router.get("/register", require("../src/controllers/user_controllers").register);
 
 //跳转到登录页面
 router.get("/login", require("../src/controllers/user_controllers").login);
@@ -69,9 +66,12 @@ router.get("/shop/product_infolist/:id", function(req, res, next) {
   res.render("shop/product_infolist");
 });
 //产品详情页
-router.get("/shop/product_content/:id", function (req, res, next) {
-  res.render("shop/product_content");
+router.get("/shop/productDetail/:id", function (req, res, next) {
+  res.render("shop/productDetail");
 });
+//产品详情页
+router.get("/shop/product_detail/:id", require("../src/controllers/shop_controllers").productDetail);
+
 
 //跳转到搜索页面
 //router.get('/shop/product/search', require('../src/controllers/user_controllers').login);

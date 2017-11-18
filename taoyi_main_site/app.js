@@ -19,6 +19,11 @@ app.set('view engine', 'hbs');
 app.set('view options', {
   layout:'layouts/layout.hbs'
 });
+hbs.registerHelper('isfirst', function(index, options) {
+  if ((index == 0)) {
+    return options.fn(this);
+  }
+});
 hbs.registerPartials(__dirname + '/template/partials');
 
 // uncomment after placing your favicon in /public
