@@ -1,1 +1,91 @@
-<h1>逛市场</h1>
+<link rel="stylesheet" href="/assets/css/page/seller.css">
+
+<div class="market container">
+    <div class="ad">
+        <ul class="qf">
+            {{#each data}}
+            <li class="adproduct"><a href="{{url}}"><img src="{{img}}" class="img-responsive" width="{{width}}" height="{{height}}" alt=""></a></li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="selection">
+        <form class="form-horizontal">
+            {{#each selectbox}}
+            <div class="form-group">
+                <label class="col-sm-2 col-md-1 control-label">{{label}}：</label>
+                <div class="col-sm-10  col-md-11">
+                    <p class="form-control-static">
+                        {{#each selectlist}}
+                        <a href="{{url}}" {{#isfirst  @index}} class="active" {{/isfirst}}>{{name}}</a>
+                        {{/each}}
+                    </p>
+                </div>
+            </div>
+            {{/each}}
+        </form>
+    </div>
+    <div class="lineUp row">
+        <div class="col-sm-6 col-xs-6 btn-group" role="group" aria-label="...">
+            <button type="button" class="btn active">时间</button>
+            <button type="button" class="btn">销量</button>
+            <button type="button" class="btn">人气</button>
+        </div>
+        <div class="col-sm-6 col-xs-6 selectall">
+            <span class="colred">共 4328 家店铺</span>
+            <span><i class="colred">1</i>/44</span>
+        </div>   
+    </div>
+    <div class="shopbox qf">
+        {{#each shop}}
+        <dl class="shopitem">
+            <dt class="shopname"><a href="{{url}}" target="_blank">{{shopname}}</a></dt>
+            <dd class="shopcontent qf">
+                <div>市场：{{marketname}}</div>
+                <div>楼层：{{floor}}</div>
+                <div>档口：{{dangkou}}</div>
+                <div>销量：{{sales}}</div>
+                <div>商品：{{product}}</div>
+                <div>人气：{{renqi}}</div>
+            </dd>
+        </dl>
+        {{/each}}
+    </div>
+    <div class="pag" id="pag">
+        <ul>
+            <li class="all">共44页</li>
+            <li>首页</li>
+            <li>上一页</li>
+            <li class="cur">1</li>
+            <li class="clickable">2</li>
+            <li>3</li>
+            <li>……</li>
+            <li>下一页</li>
+            <li>末页</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+
+    Handlebars.registerHelper("isfirst",function(value, options){
+        if(value == 0) {
+            return options.fn(this);
+        }
+    })
+
+     {{!--useTemplate($("#ad"),data1,$(".ad ul"));
+    useTemplate($("#selection"),data2,$(".selection .form-horizontal"));
+    useTemplate($("#shopbox"),data3,$(".shopbox"));
+    
+    function useTemplate(templateId,data,htmlBox) {
+        var t = templateId.html();
+        var f = Handlebars.compile(t);
+        var h = f(data);
+        htmlBox.html(h);
+    } --}}
+
+    $(".selection .form-group a").on("click", function() {
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+    });
+</script>

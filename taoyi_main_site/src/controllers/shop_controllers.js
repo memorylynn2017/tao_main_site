@@ -22,3 +22,13 @@ exports.productDetail=function(req,res,next){
         //   }
     });
 }
+
+//逛市场
+exports.seller=function(req,res,next) {
+    var sellerData = require(process.cwd() + '/data/shop_product.json');
+    res.render('shop/seller',{
+        data: sellerData.data,
+        selectbox: sellerData.selectbox,
+        shop: sellerData.shop
+    });
+}
