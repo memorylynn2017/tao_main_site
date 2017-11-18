@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('hbs');
+var hbsHelper = require('./hbsHelper');
 
 // var index = require('./routes/index');
 // var users = require('./routes/users');
@@ -19,11 +20,7 @@ app.set('view engine', 'hbs');
 app.set('view options', {
   layout:'layouts/layout.hbs'
 });
-hbs.registerHelper('isfirst', function(index, options) {
-  if ((index == 0)) {
-    return options.fn(this);
-  }
-});
+hbs.registerHelper(hbsHelper);  //注册函数
 hbs.registerPartials(__dirname + '/template/partials');
 
 // uncomment after placing your favicon in /public

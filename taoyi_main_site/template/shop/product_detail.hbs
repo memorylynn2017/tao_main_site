@@ -46,14 +46,9 @@
                 <div id="preview-scroll" class="preview-scroll">
                     <div class="items">
                         <ul class="clearfix">
-                            {{!-- <li class="on"><img src="https://img.alicdn.com/bao/uploaded/i1/1867539102/TB181MedgvD8KJjy0FlXXagBFXa_!!0-item_pic.jpg" bimg="images/02.jpg"></li> --}}
+                            {{!-- <li class="on"><img src="ss" bimg="bb"></li> --}}
                             {{#each preview}}
                                 <li><img src="{{simg}}" bimg="{{bimg}}"></li>
-                                {{!-- {{#isfirst @index}}
-                                    <li class="on"><img src="{{simg}}" bimg="{{bimg}}"></li>
-                                {{else}}
-                                    <li><img src="{{simg}}" bimg="{{bimg}}"></li>
-                                {{/isfirst}} --}}
                             {{/each}}
                         </ul>
                     </div>
@@ -61,7 +56,7 @@
             </div>
             <div class="center pull-left">
                 {{!-- 商品名称 --}}
-                <div class="productName">{{this.name}}</div>
+                <div class="productName">{{name}}</div>
                 <div class="productPrice">
                     <div class="item pull-left"><span>批发价</span><strong class="c-red fs-24">￥{{this.cheapPrice}}</strong></div>
                     <div class="item pull-left">
@@ -90,7 +85,9 @@
                             <div class="title pull-left">尺寸</div>
                             <div class="con pull-left">
                                 <ul class="spec-text">
-                                    <li><a class="s-btn" href="javascript:;">均码</a></li>
+                                    {{#each size}}
+                                        <li><a class="s-btn on" href="javascript:;">{{this}}</a></li>
+                                    {{/each}}
                                 </ul>
                             </div>
                         </div>
@@ -98,8 +95,9 @@
                             <div class="title pull-left">颜色分类</div>
                             <div class="con pull-left">
                                 <ul class="spec-text">
-                                    <li><a class="s-btn on" href="javascript:;">秋色</a></li>
-                                    <li><a class="s-btn" href="javascript:;">黑色</a></li>
+                                    {{#each color}}
+                                        <li><a class="s-btn" href="javascript:;">{{this}}</a></li>
+                                    {{/each}}
                                 </ul>
                             </div>
                         </div>

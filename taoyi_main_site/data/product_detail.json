@@ -6,6 +6,8 @@
             "cheapPrice": "35.00",
             "taobaoPrice": "45.00",
             "vipPrice": "32.00",
+            "size": ["均码", "S码", "M码", "L码"],
+            "color": ["秋色", "黑色", "蓝色", "绿色", "绯红色", "酒红色", "灰色", "经典蓝河色"],
             "preview": [
                 {
                     "simg": "http://gd3.alicdn.com/bao/uploaded/i3/TB1sT_MGXXXXXa9aXXXXXXXXXXX_!!0-item_pic.jpg",
@@ -26,6 +28,11 @@
                 {
                     "simg": "http://gd1.alicdn.com/imgextra/i1/2332733005/TB2QkwlcFXXXXacXXXXXXXXXXXX_!!2332733005.jpg",
                     "bimg": "http://gd1.alicdn.com/imgextra/i1/2332733005/TB2QkwlcFXXXXacXXXXXXXXXXXX_!!2332733005.jpg"
+                }
+            ],
+            "store": [
+                {
+                    "name": "芭巴巴牛仔1"
                 }
             ]
         }

@@ -12,13 +12,6 @@ exports.dailyNew=function(req,res,next){
 exports.productDetail=function(req,res,next){
     var detailData = require(process.cwd() + '/data/product_detail.json');
 	res.render('shop/product_detail',{
-        detail: detailData.data,
-        // helpers: {
-        //     isfirst: function(index, options) {
-        //       if ((index == 0)) {
-        //         return options.fn(this);
-        //       }
-        //     }
-        //   }
+        detail: detailData.data
     });
 }
