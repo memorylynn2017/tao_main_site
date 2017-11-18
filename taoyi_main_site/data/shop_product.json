@@ -1,0 +1,106 @@
+{
+    "status": true,
+    "data": [
+        {
+            "url": "javascript:;",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "width": "238",
+            "height": "125"
+        },{
+            "url": "javascript:;",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "width": "238",
+            "height": "125"
+        },{
+            "url": "javascript:;",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "width": "238",
+            "height": "125"
+        },{
+            "url": "javascript:;",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "width": "238",
+            "height": "125"
+        },{
+            "url": "javascript:;",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "width": "238",
+            "height": "125"
+        }
+    ],
+    "selectbox": [
+        {
+            "label": "商圈",
+            "selectlist": [{
+                "url": "javascript:;",
+                "name": "沙河网批1"
+            },{
+                "url": "javascript:;",
+                "name": "沙河网批2"
+            },{
+                "url": "javascript:;",
+                "name": "沙河网批3"
+            }]
+        },{
+            "label": "商圈",
+            "selectlist": [{
+                "url": "javascript:;",
+                "name": "沙河网批1"
+            },{
+                "url": "javascript:;",
+                "name": "沙河网批2"
+            },{
+                "url": "javascript:;",
+                "name": "沙河网批3"
+            }]
+        }
+    ],
+    "shop": [
+        {
+            "url": "/13066335988",
+            "shopname": "甜果服饰",
+            "marketname": "佰润",
+            "floor": "3",
+            "dangkou": "3",
+            "sales": "20",
+            "product": "46",
+            "renqi": "123"
+        },{
+            "url": "/13066335988",
+            "shopname": "甜果服饰",
+            "marketname": "佰润",
+            "floor": "3",
+            "dangkou": "3",
+            "sales": "20",
+            "product": "46",
+            "renqi": "123"
+        },{
+            "url": "/13066335988",
+            "shopname": "甜果服饰",
+            "marketname": "佰润",
+            "floor": "3",
+            "dangkou": "3",
+            "sales": "20",
+            "product": "46",
+            "renqi": "123"
+        },{
+            "url": "/13066335988",
+            "shopname": "甜果服饰",
+            "marketname": "佰润",
+            "floor": "3",
+            "dangkou": "3",
+            "sales": "20",
+            "product": "46",
+            "renqi": "123"
+        },{
+            "url": "/13066335988",
+            "shopname": "甜果服饰",
+            "marketname": "佰润",
+            "floor": "3",
+            "dangkou": "3",
+            "sales": "20",
+            "product": "46",
+            "renqi": "123"
+        }
+    ]
+}

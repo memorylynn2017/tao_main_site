@@ -45,9 +45,10 @@ router.get("/shop/productDetail", function (req, res, next) {
 });
 
 //逛市场
-router.get("/shop/seller", function(req, res, next) {
-  res.render("shop/seller");
-});
+router.get(
+  "/shop/seller", 
+  require("../src/controllers/shop_controllers").seller
+);
 //实拍优选
 router.get("/shop/orderRemit", function(req, res, next) {
   res.render("shop/orderRemit");
