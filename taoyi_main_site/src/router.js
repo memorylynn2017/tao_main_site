@@ -19,6 +19,7 @@ router.get("/", function(req, res, next) {
 
   //首页焦点图json
   var focus_Data = require("../data/focuspic.json");
+
   // 都渲染进index里面？？
 
   var options = {

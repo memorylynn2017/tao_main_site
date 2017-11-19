@@ -544,7 +544,8 @@ ol {
 }
 .productitem .item-content dd .name {
   color: #666;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 16px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
