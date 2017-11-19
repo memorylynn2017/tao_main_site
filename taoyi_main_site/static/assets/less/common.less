@@ -5,6 +5,18 @@
 	}
 	.fs-loop((@i + 1), @n);
 }
+//margin,padding设值
+.pos-loop(@i, @n) when (@i <= @n) {
+	.mt@{i} {margin-top: unit(@i,px);}
+	.mb@{i} {margin-bottom: unit(@i,px);}
+	.ml@{i} {margin-left: unit(@i,px);}
+	.mr@{i} {margin-right: unit(@i,px);}
+	.pt@{i} {padding-top: unit(@i,px);}
+	.pb@{i} {padding-bottom: unit(@i,px);}
+	.pl@{i} {padding-left: unit(@i,px);}
+	.pr@{i} {padding-right: unit(@i,px);}
+	.pos-loop((@i + 5), @n);
+}
 //bootstrap上col-lg, col-md, col-sm, col-xs修改
 .col-loop(@i, @n) when (@i <= @n) {
 	.col-lg-@{i},.col-md-@{i},.col-sm-@{i},.col-xs-@{i}{
@@ -22,7 +34,7 @@ img.max-h{max-width: 100%;}	//防止 img 指定「height」时图片高度不能
 
 .fs-loop(10,24);
 .col-loop(1,12);
-
+.pos-loop(5,40);
 // a:hover{color:#fd9925!important;}
 
 //==============bootstrap上修改===========start

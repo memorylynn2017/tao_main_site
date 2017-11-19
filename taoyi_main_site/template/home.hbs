@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="/assets/css/page/home.css">
+<link rel="stylesheet" href="/assets/plugins/flickity/flickity.css">
+<script type="text/javascript" src="/assets/plugins/flickity/flickity.min.js"></script>
 <div class="wrapper">
     <div class="container">
 
@@ -7,28 +9,103 @@
             {{!--第一部分：中部 焦点图 及轮播图--}}
             <div class="banner pull-left">
                 <div class="inner">
-                    <div>
-                        <img src="assets/images/temp/5.jpeg" alt="">
-                    </div>
-                    <div class="rob">
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-6">
-                                <img src="assets/images/temp/3.png" alt="">
+                    {{!-- START 焦点图--> --}}
+                    {{> component/focus_pic}}
+                    {{!-- END 焦点图--> --}}
+                    {{!-- START 焦点广告位--> --}}
+                    <div class="focus-ad clearfix">
+                        <div class="item pull-left">
+                            <a class="pull-left" href="/shop/product_detail/1" target="/">
+                                <img class="ad-img" src="http://gd4.alicdn.com/bao/uploaded/i4/687877487/TB2lGHXXXXXXXclXFXXXXXXXXXX_!!687877487.jpg" title="5181# 秋冬新品时尚百搭韩版翻领竖条纹修身显瘦针织打底上衣" alt="">
+                            </a>
+                            <div class="item-text pull-left">
+                                <p class="item-title">5181# 秋冬新品时尚百搭韩版翻领竖条纹修身显瘦针织打底上衣</p>
+                                <div class="item-num mt15 clearfix">
+                                    <div class="left pull-left">
+                                        <span class="t-through">￥35</span><br/>
+                                        <strong class="fs-16 c-red">￥35</strong>
+                                    </div>
+                                    <div class="center pull-left">
+                                        <span>限量：0件</span><br/>
+                                        <span>库存：0件</span>
+                                    </div>
+                                    <div class="right pull-right">
+                                        <span class="c-corange">剩余0件</span>
+                                    </div>
+                                </div>
+                                <div class="item-other mt25">
+                                    <a class="pull-left" href="javascript:;">马上抢批</a>
+                                    <span class="pull-right">4人在看</span>
+                                </div>
                             </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <img src="assets/images/temp/3.png" alt="">
+                        </div>
+                        <div class="item pull-left">
+                            <a class="pull-left" href="/shop/product_detail/2" target="/">
+                                <img class="ad-img" src="https://img.alicdn.com/bao/uploaded/i2/1750903538/TB2rKHcdMMPMeJjy1XcXXXpppXa_!!1750903538.jpg" title="5181# 秋冬新品时尚百搭韩版翻领竖条纹修身显瘦针织打底上衣" alt="">
+                            </a>
+                            <div class="item-text pull-left">
+                                <p class="item-title">5181# 秋冬新品时尚百搭韩版翻领竖条纹修身显瘦针织打底上衣</p>
+                                <div class="item-num mt15 clearfix">
+                                    <div class="left pull-left">
+                                        <span class="t-through">￥35</span><br/>
+                                        <strong class="fs-16 c-red">￥35</strong>
+                                    </div>
+                                    <div class="center pull-left">
+                                        <span>限量：0件</span><br/>
+                                        <span>库存：0件</span>
+                                    </div>
+                                    <div class="right pull-right">
+                                        <span class="c-corange">剩余0件</span>
+                                    </div>
+                                </div>
+                                <div class="item-other mt25">
+                                    <a class="pull-left" href="javascript:;">马上抢批</a>
+                                    <span class="pull-right">4人在看</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {{!-- END 焦点广告位--> --}}
                 </div>
             </div>
             {{!--第二部分：左部 左侧导航 --}} {{> component/sidebar }} {{!-- 动态 --}} {{!-- 第三部分：右部 右侧登陆及公告等位 --}}
             <div class="dynamic pull-left">
                 <div class="dynamic-d">
-                    <img src="assets/images/temp/2.png" alt="">
+
+                    <div class="dynamic-info">
+                        <div class="tab clearfix">
+                            <span class="on">公告信息</span>
+                            <span>市场动态</span>
+                        </div>
+                        <div class="desc">
+                            <ul>
+                                <li>2017国庆中秋放假</li>
+                                <li>2017国庆中秋放假</li>
+                                <li>2017国庆中秋放假</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dynamic-reglogin">
+                        <div class="clearfix">
+                            <a class="btn reg" href="javascript:;">登录</a>
+                            <a class="btn login" href="javascript:;">注册</a>
+                        </div>
+                        <div class="info">
+                            <ul>
+                                <li>您好，欢迎来到淘亿网！</li>
+                                <li>当前在线人数：1015</li>
+                                <li>今日商品总数：206,549</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="dynamic-min">
-                    <img src="assets/images/temp/4.png" alt="">
+                <div class="dynamic-fun mt10 clearfix">
+                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/6b377b846039424ca8872909db5ee502.jpg"><br/>一手货源</a>
+                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/3316c72ba2034c12858cf5536fff5c27.jpg"><br/>售后无忧</a>
+                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/ce81be9d03b74ed383f415b52c3ce555.jpg"><br/>闪电发货</a>
+                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/e7c79ad4b41d4e5d8bf4e2f243a82849.jpg"><br/>实体认证</a>
+                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/c0daca9763524d6a984a45af107a9e3a.jpg"><br/>全球配送</a>
+                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/b650ea7ef37246319a7bc65b6898b30f.jpg"><br/>支付安全</a>              
                 </div>
             </div>
         </div>

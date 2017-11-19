@@ -14,6 +14,8 @@ router.get("/", function(req, res, next) {
   var market_brass_Data = require("../data/market_brass.json");
   //箱包批发市场json
   var market_bags_Data = require("../data/market_bags.json");
+  //首页焦点图json
+  var focus_Data = require("../data/focuspic.json");
 
   // 都渲染进index里面？？
 
@@ -22,7 +24,8 @@ router.get("/", function(req, res, next) {
     woman: market_woman_Data.data,
     man: market_man_Data.data,
     brass: market_brass_Data.data,
-    bags: market_bags_Data.data
+    bags: market_bags_Data.data,
+    focus: focus_Data.data
   };
   res.render("home", options);
 });
