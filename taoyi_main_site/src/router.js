@@ -50,9 +50,10 @@ router.get(
   require("../src/controllers/shop_controllers").seller
 );
 //实拍优选
-router.get("/shop/orderRemit", function(req, res, next) {
-  res.render("shop/orderRemit");
-});
+router.get(
+  "/shop/orderRemit", 
+  require("../src/controllers/shop_controllers").orderRemit
+);
 //服务
 router.get("/shop/service", function(req, res, next) {
   res.render("shop/service");

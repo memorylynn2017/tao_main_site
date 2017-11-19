@@ -580,7 +580,6 @@ h6 {
 .btn-group.btngroup3 .btn.active {
   color: #fff;
   background: red;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-color: red;
 }
