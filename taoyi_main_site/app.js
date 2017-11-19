@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -10,15 +9,6 @@ var hbsHelper = require('./hbsHelper');
 
 // var index = require('./routes/index');
 // var users = require('./routes/users');
-=======
-var express = require("express");
-var path = require("path");
-var favicon = require("serve-favicon");
-var logger = require("morgan");
-var cookieParser = require("cookie-parser");
-var bodyParser = require("body-parser");
-var hbs = require("hbs");
->>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
 
 //生成express服务实例
 var app = express();
@@ -29,19 +19,8 @@ app.set("view engine", "hbs");
 app.set("view options", {
   layout: "layouts/layout.hbs"
 });
-<<<<<<< HEAD
-hbs.registerHelper(hbsHelper);  //注册函数
-hbs.registerPartials(__dirname + '/template/partials');
-=======
-
-// 注册一个isfirst helper;
-hbs.registerHelper("isfirst", function(index, options) {
-  if (index == 0) {
-    return options.fn(this);
-  }
-});
->>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
-
+//注册函数
+hbs.registerHelper(hbsHelper);
 //局部组件...
 hbs.registerPartials(__dirname + "/template/partials");
 
