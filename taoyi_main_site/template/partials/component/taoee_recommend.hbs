@@ -19,8 +19,6 @@
       text-align: center;
       font-size: 18px;
       background: #fff;
-      height: 200px;
-
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -39,32 +37,24 @@
 <div class="container">
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <a href="javascript:;"></a>
+        {{#each this.detail}}
+        <div class="swiper-slide productitem">
+            <a href="{{url}}">
+                <dl class="item-content">
+                    <dt>
+                        <img src="{{img}}" alt="">
+                    </dt>
+                    <dd>
+                        <p class="name">{{name}}</p>
+                        <div class="msg qf">
+                            <strong class="price fl">￥{{price}}</strong>
+                            <span class="fr">{{shopname}}</span>
+                        </div> 
+                    </dd>
+                </dl>
+            </a>
         </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
-        <div class="swiper-slide">Slide 11</div>
-        <div class="swiper-slide">Slide 12</div>
-        <div class="swiper-slide">Slide 13</div>
-        <div class="swiper-slide">Slide 14</div>
-        <div class="swiper-slide">Slide 15</div>
-        <div class="swiper-slide">Slide 16</div>
-        <div class="swiper-slide">Slide 17</div>
-        <div class="swiper-slide">Slide 18</div>
-        <div class="swiper-slide">Slide 19</div>
-        <div class="swiper-slide">Slide 20</div>
-        <div class="swiper-slide">Slide 21</div>
-        <div class="swiper-slide">Slide 22</div>
-        <div class="swiper-slide">Slide 23</div>
-        <div class="swiper-slide">Slide 24</div>
+        {{/each}}
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>

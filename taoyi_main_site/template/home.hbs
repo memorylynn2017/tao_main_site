@@ -59,8 +59,9 @@
             </div>
         </div>
         {{!-- 模块二 end --}}
+        {{#each recommend}}
         <div class="sentiment">
-            <div class="title qf">
+            {{!-- <div class="title qf">
                 <span>淘艺
                     <i>推荐</i>
                 </span>
@@ -120,9 +121,10 @@
                         <span class="fl shopname">小叮当</span>
                     </p>
                 </div>
-            </div>
+            </div> --}}
+            {{> component/taoee_recommend }}
         </div>
-
+        {{/each}}
         {{!-- 批发市场 --}} {{#each woman}}
         <div class="market-class qf">
             <div class="row">
