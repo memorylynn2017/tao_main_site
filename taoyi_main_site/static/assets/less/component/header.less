@@ -56,7 +56,7 @@
         margin: 40px 0;
       }
       .search-frame{
-        margin-top: 50px;
+        margin-top: 55px;
         height: 40px;
   
         .search-box{
@@ -104,17 +104,49 @@
             }
           }
         }
-        .cart-btn{
+        .cart{
+          position: relative;
           display: inline-block;
           margin-left: 10px;
-          width: 130px;
-          height: 40px;
-          line-height: 40px;
-          text-align: center;
-          background: #ffdb3d;
-          color:#000;
-          font-size: 14px;
+          .cart-btn{
+            position: relative;
+            display: block;
+            width: 130px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #ffdb3d;
+            border: 1px solid #FFDB3D;
+            color:#000;
+            font-size: 14px;
+            z-index: 9;
+          }
+          .cart-yc{
+            display: none;
+            position: absolute;
+            padding: 10px 11px;
+            top: 55px;
+            right: 0;
+            width: 260px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #FF4A00;
+            z-index: 1;
+          }
+          &:hover{
+            .cart-btn{
+              height: 56px;
+              color:#FF4A00;
+              background-color: #fff;
+              border: 1px solid #FF4A00;
+              border-bottom: 0;
+            }
+            .cart-yc{
+              display: block;
+            }
+          }
         }
+        
       }
     }
     //顶部导航

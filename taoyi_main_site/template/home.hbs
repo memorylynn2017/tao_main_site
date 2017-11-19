@@ -71,42 +71,13 @@
             {{!--第二部分：左部 左侧导航 --}} {{> component/sidebar }} {{!-- 动态 --}} {{!-- 第三部分：右部 右侧登陆及公告等位 --}}
             <div class="dynamic pull-left">
                 <div class="dynamic-d">
-
-                    <div class="dynamic-info">
-                        <div class="tab clearfix">
-                            <span class="on">公告信息</span>
-                            <span>市场动态</span>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>2017国庆中秋放假</li>
-                                <li>2017国庆中秋放假</li>
-                                <li>2017国庆中秋放假</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dynamic-reglogin">
-                        <div class="clearfix">
-                            <a class="btn reg" href="javascript:;">登录</a>
-                            <a class="btn login" href="javascript:;">注册</a>
-                        </div>
-                        <div class="info">
-                            <ul>
-                                <li>您好，欢迎来到淘亿网！</li>
-                                <li>当前在线人数：1015</li>
-                                <li>今日商品总数：206,549</li>
-                            </ul>
-                        </div>
-                    </div>
+                    {{!-- 动态-公告动态 --}}
+                    {{> component/dynamic_info}}
+                    {{!-- 动态-登录注册 --}}
+                    {{> component/dynamic_reglogin}}
                 </div>
-                <div class="dynamic-fun mt10 clearfix">
-                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/6b377b846039424ca8872909db5ee502.jpg"><br/>一手货源</a>
-                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/3316c72ba2034c12858cf5536fff5c27.jpg"><br/>售后无忧</a>
-                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/ce81be9d03b74ed383f415b52c3ce555.jpg"><br/>闪电发货</a>
-                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/e7c79ad4b41d4e5d8bf4e2f243a82849.jpg"><br/>实体认证</a>
-                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/c0daca9763524d6a984a45af107a9e3a.jpg"><br/>全球配送</a>
-                    <a href="#" target="_blank"><img src="http://www.taoee.com/upload/image/b650ea7ef37246319a7bc65b6898b30f.jpg"><br/>支付安全</a>              
-                </div>
+                {{!-- 动态-功能模块 --}}
+                {{> component/dynamic_fun}}
             </div>
         </div>
 
@@ -227,3 +198,4 @@
         {{/each}}
     </div>
 </div>
+{{> component/footer_home}}

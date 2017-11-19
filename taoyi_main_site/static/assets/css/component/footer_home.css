@@ -1,0 +1,65 @@
+.footer-home {
+  background: #fff;
+  font-size: 13px;
+}
+@media (max-width: 800px) {
+  .footer-home {
+    width: 815px;
+  }
+}
+@media (min-width: 800px) {
+  .footer-home {
+    width: 100%;
+  }
+}
+.footer-home .commitment {
+  background: url(../../images/commitment-bj.jpg);
+}
+.footer-home .footer-nav {
+  height: 190px;
+  background: url(../../images/taoee-footer-bg.png) no-repeat center bottom;
+}
+.footer-home .footer-nav .navbar-lv1 > li {
+  width: 160px;
+  min-height: 100px;
+  margin: 30px 30px 30px 0;
+  border-right: 1px solid #ddd;
+}
+.footer-home .footer-nav .navbar-lv1 > li:last-child {
+  width: auto;
+  border: none;
+}
+.footer-home .footer-nav .navbar-lv1 > li > a {
+  font-size: 18px;
+  color: #333;
+}
+.footer-home .footer-nav .navbar-lv1 > li .navbar-lv2 li {
+  font-size: 14px;
+}
+.footer-home .footer-nav .navbar-lv1 > li .navbar-lv2 li a {
+  color: #333;
+}
+@media (max-width: 800px) {
+  .footer-home .footer-nav .navbar-lv1 > li {
+    margin: 30px 10px 30px 0;
+    width: 100px;
+  }
+}
+@media (min-width: 800px) {
+  .footer-home .footer-nav .navbar-lv1 > li {
+    margin: 30px 10px 30px 0;
+    width: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .footer-home .footer-nav .navbar-lv1 > li {
+    margin: 30px 30px 30px 0;
+    width: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-home .footer-nav .navbar-lv1 > li {
+    margin: 30px 30px 30px 0;
+    width: 160px;
+  }
+}

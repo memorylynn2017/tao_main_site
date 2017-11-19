@@ -1,0 +1,19 @@
+.dynamic-fun {
+  background: #fff;
+}
+.dynamic-fun a {
+  float: left;
+  display: block;
+  padding-top: 10px;
+  width: 33.33%;
+  height: 75px;
+  text-align: center;
+  color: #656d77;
+  font-size: 13px;
+}
+.dynamic-fun a:hover {
+  color: #fd9925;
+}
+.dynamic-fun a img {
+  margin-bottom: 5px;
+}

@@ -12,58 +12,7 @@
     width: 100%;
   }
 }
-.footer .commitment {
-  background: url(../../images/commitment-bj.jpg);
-}
-.footer .footer-nav {
-  height: 190px;
-  background: url(../../images/taoee-footer-bg.png) no-repeat center bottom;
-}
-.footer .footer-nav .navbar-lv1 > li {
-  width: 160px;
-  min-height: 100px;
-  margin: 30px 30px 30px 0;
-  border-right: 1px solid #ddd;
-}
-.footer .footer-nav .navbar-lv1 > li:last-child {
-  width: auto;
-  border: none;
-}
-.footer .footer-nav .navbar-lv1 > li > a {
-  font-size: 18px;
-  color: #333;
-}
-.footer .footer-nav .navbar-lv1 > li .navbar-lv2 li {
-  font-size: 14px;
-}
-.footer .footer-nav .navbar-lv1 > li .navbar-lv2 li a {
-  color: #333;
-}
-@media (max-width: 800px) {
-  .footer .footer-nav .navbar-lv1 > li {
-    margin: 30px 10px 30px 0;
-    width: 100px;
-  }
-}
-@media (min-width: 800px) {
-  .footer .footer-nav .navbar-lv1 > li {
-    margin: 30px 10px 30px 0;
-    width: 100px;
-  }
-}
-@media (min-width: 992px) {
-  .footer .footer-nav .navbar-lv1 > li {
-    margin: 30px 30px 30px 0;
-    width: 120px;
-  }
-}
-@media (min-width: 1200px) {
-  .footer .footer-nav .navbar-lv1 > li {
-    margin: 30px 30px 30px 0;
-    width: 160px;
-  }
-}
-.footer .footer-nav2 .navs {
+.footer .footer-nav .navs {
   position: relative;
   display: inline-block;
   height: 50px;
@@ -72,21 +21,21 @@
   line-height: 1.2;
   left: 50%;
 }
-.footer .footer-nav2 .navs ul {
+.footer .footer-nav .navs ul {
   padding: 17px 0;
   left: 50%;
 }
-.footer .footer-nav2 .navs ul li {
+.footer .footer-nav .navs ul li {
   padding: 0 11px;
   border-left: 1px solid #e6e6e6;
 }
-.footer .footer-nav2 .navs ul li:first-child {
+.footer .footer-nav .navs ul li:first-child {
   border: none;
 }
-.footer .footer-nav2 .navs ul li a {
+.footer .footer-nav .navs ul li a {
   color: #a4a4a4;
 }
-.footer .footer-nav2 .copyright {
+.footer .footer-nav .copyright {
   height: 50px;
   color: #919191;
   text-align: center;
