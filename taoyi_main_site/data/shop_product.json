@@ -8,25 +8,51 @@
             "height": "125"
         },{
             "url": "javascript:;",
-            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img2.png",
             "width": "238",
             "height": "125"
         },{
             "url": "javascript:;",
-            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img3.png",
             "width": "238",
             "height": "125"
         },{
             "url": "javascript:;",
-            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img4.png",
             "width": "238",
             "height": "125"
         },{
             "url": "javascript:;",
-            "img": "http://www.taoee.com/template/20140828/Images/allStore-img1.png",
+            "img": "http://www.taoee.com/template/20140828/Images/allStore-img5.png",
             "width": "238",
             "height": "125"
-        }
+        },
+         {
+             "url": "javascript:;",
+             "img": "http://www.taoee.com/template/20140828/Images/allStore-img6.png",
+             "width": "238",
+             "height": "125"
+         }, {
+             "url": "javascript:;",
+             "img": "http://www.taoee.com/template/20140828/Images/allStore-img7.png",
+             "width": "238",
+             "height": "125"
+         }, {
+             "url": "javascript:;",
+             "img": "http://www.taoee.com/template/20140828/Images/allStore-img8.png",
+             "width": "238",
+             "height": "125"
+         }, {
+             "url": "javascript:;",
+             "img": "http://www.taoee.com/template/20140828/Images/allStore-img9.png",
+             "width": "238",
+             "height": "125"
+         }, {
+             "url": "javascript:;",
+             "img": "http://www.taoee.com/template/20140828/Images/allStore-img10.png",
+             "width": "238",
+             "height": "125"
+         }
     ],
     "selectbox": [
         {
@@ -42,65 +68,113 @@
                 "name": "沙河网批3"
             }]
         },{
-            "label": "商圈",
+            "label": "市场",
             "selectlist": [{
                 "url": "javascript:;",
-                "name": "沙河网批1"
+                "name": "全部"
             },{
                 "url": "javascript:;",
-                "name": "沙河网批2"
+                "name": "大西豪"
             },{
                 "url": "javascript:;",
-                "name": "沙河网批3"
+                "name": "西街"
+            }, {
+                "url": "javascript:;",
+                "name": "佰润"
+            }, {
+                "url": "javascript:;",
+                "name": "大时代"
+            }, {
+                "url": "javascript:;",
+                "name": "国大"
+            }, {
+                "url": "javascript:;",
+                "name": "女人街"
+            }, {
+                "url": "javascript:;",
+                "name": "新潮都"
+            }, {
+                "url": "javascript:;",
+                "name": "国投"
+            }, {
+                "url": "javascript:;",
+                "name": "三晟"
+            }, {
+                "url": "javascript:;",
+                "name": "宝华"
+            }, {
+                "url": "javascript:;",
+                "name": "非凡"
+            }, {
+                "url": "javascript:;",
+                "name": "新金马"
+            }, {
+                "url": "javascript:;",
+                "name": "柏美"
+            }, {
+                "url": "javascript:;",
+                "name": "富丽"
+            }, {
+                "url": "javascript:;",
+                "name": "圣迦"
+            }, {
+                "url": "javascript:;",
+                "name": "老金马"
+            }, {
+                "url": "javascript:;",
+                "name": "金纱"
+            }, {
+                "url": "javascript:;",
+                "name": "跨客城"
             }]
         }
     ],
     "shop": [
         {
-            "url": "/13066335988",
-            "shopname": "甜果服饰",
-            "marketname": "佰润",
-            "floor": "3",
-            "dangkou": "3",
+            "url": "/18620286668",
+            "shopname": "红苹果二店",
+            "marketname": "大西豪",
+            "floor": "1",
+            "dangkou": "B03D",
             "sales": "20",
-            "product": "46",
-            "renqi": "123"
+            "product": "143",
+            "renqi": "0"
         },{
-            "url": "/13066335988",
-            "shopname": "甜果服饰",
-            "marketname": "佰润",
+            "url": "/15018465946",
+            "shopname": "衣之尚大码棉麻店",
+            "marketname": "大西豪",
             "floor": "3",
-            "dangkou": "3",
-            "sales": "20",
-            "product": "46",
-            "renqi": "123"
+            "dangkou": "302",
+            "sales": "830",
+            "product": "89",
+            "renqi": "190"
         },{
-            "url": "/13066335988",
-            "shopname": "甜果服饰",
-            "marketname": "佰润",
-            "floor": "3",
-            "dangkou": "3",
-            "sales": "20",
-            "product": "46",
-            "renqi": "123"
+            "url": "/15802016718",
+            "shopname": "韩韵霓裳3",
+            "marketname": "女人街",
+            "floor": "2",
+            "dangkou": "A98",
+            "sales": "11",
+            "product": "59",
+            "renqi": "407"
         },{
-            "url": "/13066335988",
-            "shopname": "甜果服饰",
-            "marketname": "佰润",
-            "floor": "3",
-            "dangkou": "3",
-            "sales": "20",
-            "product": "46",
-            "renqi": "123"
+            "url": "/15920543708",
+            "shopname": "依恋服饰",
+            "marketname": "大时代",
+            "floor": "1",
+            "dangkou": "122D",
+            "sales": "272",
+            "product": "26",
+            "renqi": "414"
         },{
-            "url": "/13066335988",
-            "shopname": "甜果服饰",
-            "marketname": "佰润",
-            "floor": "3",
-            "dangkou": "3",
-            "sales": "20",
-            "product": "46",
-            "renqi": "123"
+            "url": "/13016048912",
+            "shopname": "JM欧美女装",
+            "marketname": "跨客城",
+            "floor": "1",
+            "dangkou": "128",
+            "sales": "406",
+            "product": "624",
+            "renqi": "1322"
         }
     ]
 }
