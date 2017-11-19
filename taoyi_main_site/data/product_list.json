@@ -2,6 +2,7 @@
   "status": true,
   "data": [
     {
+<<<<<<< HEAD
       "url": "/shop/product_detail/1",
       "img": "http://gd4.alicdn.com/bao/uploaded/i4/687877487/TB2lGHXXXXXXXclXFXXXXXXXXXX_!!687877487.jpg_300x300.jpg",
       "price": "60.00",
@@ -16,32 +17,116 @@
       "num": "10",
       "name": "3057#【实拍】秋冬新款亮丝针织修身中长款开叉包臀长袖连衣裙",
       "shopname": "凯蝶缌性感"
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd3.alicdn.com/imgextra/i2/657490868/TB2CWXnbY0kpuFjy0FjXXcBbVXa_!!657490868.jpg_300x300.jpg",
+      "price": "32.00",
+      "num": "10",
+      "name": "802#2017春夏新款 韩版女装大码宽松字母长款短袖T恤裙休闲连衣裙",
+      "shopname": "淘殷"
     },
     {
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd2.alicdn.com/imgextra/i2/1091683496/TB2ykJob30kpuFjSspdXXX4YXXa_!!1091683496.jpg_300x300.jpg",
+      "price": "40.00",
+      "num": "10",
+      "name": "实拍2017春装新款韩版BF风休闲长袖牛仔外套原宿风牛仔衣女大码潮",
+      "shopname": "艾美特"
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
+    },
+
+    {
+<<<<<<< HEAD
+      "url": "/shop/product_detail/1",
+      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd4.alicdn.com/imgextra/i3/453525169/TB2mqWclFXXXXbnXXXXXXXXXXXX_!!453525169.jpg_300x300.jpg",
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
+      "price": "30.00",
+      "num": "10",
+      "name": "实拍 200斤胖MM宽松大码女装金属感骷髅头印花圆领短袖T恤6015#",
+      "shopname": "爱衣衣服饰"
+    },
+    {
+<<<<<<< HEAD
       "url": "/shop/product_detail/1",
       "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
       "price": "30.00",
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd3.alicdn.com/imgextra/i2/657490868/TB2CWXnbY0kpuFjy0FjXXcBbVXa_!!657490868.jpg_300x300.jpg",
+      "price": "32.00",
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
       "num": "10",
-      "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
-      "shopname": "小咖啡猫"
+      "name": "802#2017春夏新款 韩版女装大码宽松字母长款短袖T恤裙休闲连衣裙",
+      "shopname": "淘殷"
     },
     {
-      "url": "/shop/product_detail/1",
-      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
-      "price": "30.00",
-      "num": "10",
-      "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
-      "shopname": "小咖啡猫"
-    },
-    {
+<<<<<<< HEAD
       "url": "/shop/product_detail/2",
       "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
       "price": "30.00",
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd2.alicdn.com/imgextra/i2/1091683496/TB2ykJob30kpuFjSspdXXX4YXXa_!!1091683496.jpg_300x300.jpg",
+      "price": "40.00",
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
       "num": "10",
-      "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
-      "shopname": "小咖啡猫"
+      "name": "实拍2017春装新款韩版BF风休闲长袖牛仔外套原宿风牛仔衣女大码潮",
+      "shopname": "艾美特"
     },
     {
+<<<<<<< HEAD
+      "url": "/shop/product_detail/1",
+      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd2.alicdn.com/imgextra/i4/0/TB164INIFXXXXXuXVXXXXXXXXXX_!!0-item_pic.jpg_300x300.jpg",
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
+      "price": "30.00",
+      "num": "10",
+      "name": "实拍9128#2017春季新款女装时尚个性连帽拉链无袖印花运动套装",
+      "shopname": "百艺服饰"
+    },
+    {
+<<<<<<< HEAD
+      "url": "/shop/product_detail/1",
+      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd1.alicdn.com/imgextra/i1/77656701/TB2z2wWcbJmpuFjSZFwXXaE4VXa_!!77656701.jpg_300x300.jpg",
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
+      "price": "30.00",
+      "num": "10",
+      "name": "实拍9109#2017春夏名媛气质蝴蝶结 棉欧根纱背心裙 无袖连衣裙",
+      "shopname": "百艺服饰"
+    },
+    {
+<<<<<<< HEAD
+      "url": "/shop/product_detail/1",
+      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+      "price": "30.00",
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "http://gd1.alicdn.com/imgextra/i4/1980992656/TB2h.laeFXXXXbvXXXXXXXXXXXX-1980992656.jpg_300x300.jpg",
+      "price": "50.00",
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
+      "num": "10",
+      "name": "实拍265#2017春装新款大码韩版宽松中长款休闲风衣外套",
+      "shopname": "衣人有约BM"
+    },
+
+    {
+<<<<<<< HEAD
       "url": "/shop/product_detail/1",
       "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
       "price": "30.00",
@@ -53,33 +138,15 @@
       "url": "/shop/product_detail/1",
       "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
       "price": "30.00",
+=======
+      "url": "/shop/product_detail/123456",
+      "img":
+        "https://img.alicdn.com/bao/uploaded/i3/1954318295/TB2ijqOaabyQeBjy1XbXXa9yXXa_!!1954318295.jpg_300x300.jpg",
+      "price": "50.00",
+>>>>>>> cb6a7574f2176cf5a9e9373145ce04b0e723a2a0
       "num": "10",
-      "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
-      "shopname": "小咖啡猫"
-    },
-    {
-      "url": "/shop/product_detail/1",
-      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
-      "price": "30.00",
-      "num": "10",
-      "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
-      "shopname": "小咖啡猫"
-    },
-    {
-      "url": "/shop/product_detail/1",
-      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
-      "price": "30.00",
-      "num": "10",
-      "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
-      "shopname": "小咖啡猫"
-    },
-    {
-      "url": "/shop/product_detail/1",
-      "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
-      "price": "30.00",
-      "num": "10",
-      "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
-      "shopname": "小咖啡猫"
+      "name": "701#实拍2017韩版女士上衣春秋宽松百搭学生长袖休闲运动短外套",
+      "shopname": "卓妍女装"
     }
   ]
 }

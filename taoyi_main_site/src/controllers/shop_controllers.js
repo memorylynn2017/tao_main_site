@@ -25,3 +25,11 @@ exports.seller=function(req,res,next) {
         shop: sellerData.shop
     });
 }
+
+//实拍优选
+exports.orderRemit=function(req,res,next){
+    var listData = require(process.cwd() + '/data/order_remit.json');
+	res.render('shop/orderRemit',{
+        list: listData.data,
+    });
+}
