@@ -20,6 +20,9 @@ h6 {
   float: left;
   display: inline-block;
 }
+img.max-h {
+  max-width: 100%;
+}
 .fs-10 {
   font-size: 10px !important;
 }
@@ -137,12 +140,20 @@ h6 {
 .col-xs-12 {
   padding: 0;
 }
+a:hover {
+  color: #fd9925!important;
+}
 .container {
   padding-left: 0;
   padding-right: 0;
 }
 .row {
   margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  list-style-image: none;
 }
 @media (max-width: 800px) {
   .container {

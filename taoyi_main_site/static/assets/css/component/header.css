@@ -141,6 +141,7 @@
   color: #fff;
 }
 .header .header-nav .nav-top li a:hover {
+  color: #fff!important;
   background: #000;
 }
 @media (max-width: 800px) {

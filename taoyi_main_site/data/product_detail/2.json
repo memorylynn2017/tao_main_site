@@ -1,0 +1,64 @@
+{
+    "status": true,
+    "data": [
+        {
+            "id": "2",
+            "name": "3057#【实拍】秋冬新款亮丝针织修身中长款开叉包臀长袖连衣裙",
+            "typeName": "男士衬衫",
+            "cheapPrice": "55.00",
+            "taobaoPrice": "75.00",
+            "vipPrice": "50.00",
+            "evaluationNum": "31",
+            "volumeNum": "23",
+            "likeNum": "307",
+            "size": ["均码"],
+            "color": ["黑色", "卡其色"],
+            "preview": [
+                {
+                    "simg": "https://img.alicdn.com/bao/uploaded/i2/1750903538/TB2rKHcdMMPMeJjy1XcXXXpppXa_!!1750903538.jpg",
+                    "bimg": "https://img.alicdn.com/bao/uploaded/i2/1750903538/TB2rKHcdMMPMeJjy1XcXXXpppXa_!!1750903538.jpg"
+                },
+                {
+                    "simg": "https://img.alicdn.com/bao/uploaded/i1/1750903538/TB2pZ54dRUSMeJjy1zdXXaR3FXa_!!1750903538.jpg",
+                    "bimg": "https://img.alicdn.com/bao/uploaded/i1/1750903538/TB2pZ54dRUSMeJjy1zdXXaR3FXa_!!1750903538.jpg"
+                },
+                {
+                    "simg": "https://img.alicdn.com/bao/uploaded/i1/1750903538/TB2vqdMXGigSKJjSsppXXabnpXa_!!1750903538.jpg",
+                    "bimg": "https://img.alicdn.com/bao/uploaded/i1/1750903538/TB2vqdMXGigSKJjSsppXXabnpXa_!!1750903538.jpg"
+                },
+                {
+                    "simg": "https://img.alicdn.com/bao/uploaded/i4/1750903538/TB2xGS6dMsSMeJjSspeXXa77VXa_!!1750903538.jpg",
+                    "bimg": "https://img.alicdn.com/bao/uploaded/i4/1750903538/TB2xGS6dMsSMeJjSspeXXa77VXa_!!1750903538.jpg"
+                },
+                {
+                    "simg": "https://img.alicdn.com/bao/uploaded/i3/1750903538/TB2jXpKXPuhSKJjSspjXXci8VXa_!!1750903538.jpg",
+                    "bimg": "https://img.alicdn.com/bao/uploaded/i3/1750903538/TB2jXpKXPuhSKJjSspjXXci8VXa_!!1750903538.jpg"
+                }
+            ],
+            "store": [
+                {
+                    "id": "56",
+                    "name": "凯蝶缌性感"
+                }
+            ],
+            "productAttr":[
+                "货号：3057#",
+                "风格：通勤",
+                "组合形式：单件",
+                "裙长：中长裙",
+                "款式：其他/other",
+                "袖长：长袖",
+                "领型：V领",
+                "袖型：常规",
+                "腰型：中腰",
+                "衣门襟：套头",
+                "裙型：不规则裙",
+                "图案：纯色年份",
+                "季节：2017年秋季",
+                "颜色分类：卡其色",
+                "颜色分类：黑色",
+                "尺码：均码"
+            ]
+        }
+    ]
+}
