@@ -14,25 +14,161 @@ body{
       .inner{
         margin-left: 220px;
         margin-right: 260px;
-        .rob{
-          width: 710px;
-          padding: 10px;
-          .row{
-            margin: 0;
-            padding: 15px;
-            background: #fff;
+        .focus-ad{
+          display: block;
+          margin: 10px 0 0 10px;
+          width: 690px;
+          background-color: #fff;
+          // width: 710px;
+          // height: 150px;
+          // padding: 10px;
+          // .row{
+          //   margin: 0;
+          //   padding: 15px;
+          //   background: #fff;
+          // }
+          
+          .item{
+            padding: 15px 0 15px 15px;
+            height: 150px;
+            .ad-img{
+              width: 120px;
+            }
+            .item-text{
+              // position: relative;
+              margin-left: 10px;
+              width: 190px;
+              height: 120px;
+              .item-title{
+                line-height: 14px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+              }
+              .item-num{
+                line-height: 1.2;
+                .t-through{
+                  text-decoration: line-through;
+                }
+                .c-red{
+                  color: #ff0001;
+                }
+                .c-orange{
+                  color: #fd9925;
+                }
+                .left{
+                  width: 50px;
+                }
+                .center{
+                  margin-left: 1px solid #ddd;
+                  padding-left: 7px;
+                }
+                .right{
+
+                }
+              }
+              .item-other{
+                bottom: 0;
+                a{
+                  padding:4px 6px;
+                  line-height: 1;
+                  font-weight: bold;
+                  color: #959595;
+                  background: #e4e4e4;
+                }
+              }
+            }
           }
         }
       }
     }
-    //公告
+    //动态
     .dynamic{
       width: 260px;
       margin-left: -260px;
-  
-      .dynamic-min{
-        margin-top: 10px; 
+
+      .dynamic-info{
+        background-color: #fff;
+        .tab{
+          height: 41px;
+          line-height: 40px;
+          span{
+            float: left;
+            display: inline-block;
+            width: 50%;
+            height: inherit;
+            text-align: center;
+            border-bottom: 1px solid #c9c9c9;
+            cursor: pointer;
+            &.on{
+              border-bottom: 1px solid #fd9925;
+            }
+          }
+        }
+        .desc{
+          height: 120px;
+          padding-top: 5px;
+          ul{
+            li{
+              padding: 0 15px;
+              height: 36px;
+              line-height: 36px;
+            }
+          }
+        }
+      }
+
+      //动态-登录注册
+      .dynamic-reglogin{
+        background-color: #fff;
+        a.btn{
+          float: left;
+          display: inline-block;
+          padding: 0;
+          width: 50%;
+          height: 30px;
+          line-height: 30px;
+          color: #fff;
+          border-radius: 0;
+          &.reg{
+            background-color: #0883FF;
+          }
+          &.login{
+            background-color: #ff722e;
+          }
+          &:hover{
+            background-color: #e00014;
+          }
+        }
+        .info{
+          padding: 20px 0 0 20px;
+          height: 99px;
+          li{
+            height: 25px;
+          }
+        }
+      }
+
+      //动态-功能模块
+      .dynamic-fun{
+        background: #fff;
+        a{
+          float: left;
+          display: block;
+          padding-top: 10px;
+          width: 33.33%;
+          height: 75px;
+          text-align: center;
+          color: #656d77;
+          font-size: 13px;
+          &:hover{
+            color: #fd9925;
+          }
+          img{
+            margin-bottom: 5px; 
+          }
+        }
       }
     }
-  
 }

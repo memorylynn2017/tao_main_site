@@ -2,6 +2,14 @@
 <link rel="stylesheet" href="/assets/plugins/imagezoom/jqzoom.css">
 <script src="/assets/plugins/imagezoom/jquery.jqzoom.js"></script>
 <script>
+    var setAmount = {
+        reduce: function(obj){
+
+        },
+        add: function(obj){
+            console.log($(obj).val())
+        }
+    }
     $(document).ready(function () {
         $(".jqzoom").jqueryzoom({
             xzoom: 400, //放大图的宽度(默认是 200)
@@ -46,14 +54,9 @@
                 <div id="preview-scroll" class="preview-scroll">
                     <div class="items">
                         <ul class="clearfix">
-                            {{!-- <li class="on"><img src="https://img.alicdn.com/bao/uploaded/i1/1867539102/TB181MedgvD8KJjy0FlXXagBFXa_!!0-item_pic.jpg" bimg="images/02.jpg"></li> --}}
+                            {{!-- <li class="on"><img src="ss" bimg="bb"></li> --}}
                             {{#each preview}}
                                 <li><img src="{{simg}}" bimg="{{bimg}}"></li>
-                                {{!-- {{#isfirst @index}}
-                                    <li class="on"><img src="{{simg}}" bimg="{{bimg}}"></li>
-                                {{else}}
-                                    <li><img src="{{simg}}" bimg="{{bimg}}"></li>
-                                {{/isfirst}} --}}
                             {{/each}}
                         </ul>
                     </div>
@@ -61,7 +64,7 @@
             </div>
             <div class="center pull-left">
                 {{!-- 商品名称 --}}
-                <div class="productName">{{this.name}}</div>
+                <div class="productName">{{name}}</div>
                 <div class="productPrice">
                     <div class="item pull-left"><span>批发价</span><strong class="c-red fs-24">￥{{this.cheapPrice}}</strong></div>
                     <div class="item pull-left">
@@ -76,9 +79,9 @@
                     {{!-- 商品评分 --}}
                     <div class="stars pull-left"><i class="s0"></i></div>
                     {{!-- 判断是否有人评论 --}}
-                    <span class="pull-left">0人评价</span>
-                    <span class="pull-left">成交/0件</span>
-                    <span class="pull-left">人气/0</span>
+                    <span class="pull-left">{{evaluationNum}}人评价</span>
+                    <span class="pull-left">成交/{{volumeNum}}件</span>
+                    <span class="pull-left">人气/{{likeNum}}</span>
                     <a class="pull-right" href="#" title="商品页面不正常可点击此按钮更新">商品更新</a>
                     <a class="pull-right" href="#"><i class="iconfont icon-fangdajing"></i>找同款</a>
                 </div>
@@ -90,7 +93,9 @@
                             <div class="title pull-left">尺寸</div>
                             <div class="con pull-left">
                                 <ul class="spec-text">
-                                    <li><a class="s-btn" href="javascript:;">均码</a></li>
+                                    {{#each size}}
+                                        <li><a class="s-btn on" href="javascript:;">{{this}}</a></li>
+                                    {{/each}}
                                 </ul>
                             </div>
                         </div>
@@ -98,8 +103,9 @@
                             <div class="title pull-left">颜色分类</div>
                             <div class="con pull-left">
                                 <ul class="spec-text">
-                                    <li><a class="s-btn on" href="javascript:;">秋色</a></li>
-                                    <li><a class="s-btn" href="javascript:;">黑色</a></li>
+                                    {{#each color}}
+                                        <li><a class="s-btn" href="javascript:;">{{this}}</a></li>
+                                    {{/each}}
                                 </ul>
                             </div>
                         </div>
@@ -109,7 +115,7 @@
                                 <a href="javascript:void(0)" class="J_minus" onclick="setAmount.reduce('#quantity')"></a>
                                     <input type="text" value="1" class="J_input" id="quantity" onkeyup="setAmount.modify('#quantity')">
                                     <a href="javascript:void(0)" onclick="setAmount.add('#quantity')" class="J_add"></a>&nbsp;&nbsp;
-                                    <span id="etalon_show"></span> &nbsp;&nbsp;<span id="much"></span>
+                                    <span id="etalon_show">asd</span>
                                     <input type="hidden" id="productEtalonId" value="">
                             </div>
                         </div>
@@ -200,19 +206,9 @@
                 </div>
                 <div id="showImg">
                     <ul class="attr-list">
-                        <li title=" 镂空">流行元素: 镂空</li>
-                        <li title=" 1052">货号: 1052</li>
-                        <li title=" 宽松">服装版型: 宽松</li>
-                        <li title=" 中长款">衣长: 中长款</li>
-                        <li title=" 圆领">领型: 圆领</li>
-                        <li title=" 31%(含)-50%(含)">成分含量: 31%(含)-50%(含)</li>
-                        <li title=" 棉">面料: 棉</li>
-                        <li title=" 粗横条纹">图案: 粗横条纹</li>
-                        <li title=" 通勤">风格: 通勤</li>
-                        <li title=" 韩版">通勤: 韩版</li>
-                        <li title=" 2015年夏季">年份季节: 2015年夏季</li>
-                        <li title=" 蓝白条 黑色">主要颜色: 蓝白条 黑色</li>
-                        <li title=" 均码">尺码: 均码</li>
+                        {{#each productAttr}}
+                            <li>{{this}}</li>
+                        {{/each}}
                     </ul>
                     <p align="center">尺寸；连肩袖长57&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 胸围106&nbsp;&nbsp;&nbsp;&nbsp; 腰围90&nbsp;&nbsp;&nbsp;&nbsp; 衣长76</p><p align="center">颜色；蓝白条&nbsp;&nbsp;&nbsp;&nbsp; 黑色</p><p align="center">材质；密根丝光棉</p><p align="center"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB26StHcFXXXXa6XXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB2a5pAcFXXXXbtXpXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd3.alicdn.com/imgextra/i3/2332733005/TB27kBKcFXXXXXfXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd4.alicdn.com/imgextra/i4/2332733005/TB2iDRFcFXXXXclXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd3.alicdn.com/imgextra/i3/2332733005/TB2jQBJcFXXXXXFXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd4.alicdn.com/imgextra/i4/2332733005/TB2ZJBIcFXXXXa3XXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB2K_8EcFXXXXc_XXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd2.alicdn.com/imgextra/i2/2332733005/TB21FVGcFXXXXcyXXXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd4.alicdn.com/imgextra/i4/2332733005/TB2xZREcFXXXXXBXpXXXXXXXXXX_!!2332733005.jpg"><img align="middle" src="http://gd1.alicdn.com/imgextra/i1/2332733005/TB2eNBCcFXXXXaMXpXXXXXXXXXX_!!2332733005.jpg"></p><!--商品描述-->
                 </div>

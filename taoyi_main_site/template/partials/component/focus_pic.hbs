@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/assets/css/component/focus_pic.css">
+<!--START 焦点图-->
+<div class="carousel focus-slider" data-flickity='{ "imagesLoaded": true, "wrapAround": true, "autoPlay": 3000 }'>
+    {{#each focus}}
+    <div class="slider-con">
+        <a class="slider-link" href="{{url}}" target="_blank">
+            <img class="slider-img" src="{{pic}}"/>
+        </a>
+    </div>
+    {{/each}}
+</div>
+<!--END 焦点图-->

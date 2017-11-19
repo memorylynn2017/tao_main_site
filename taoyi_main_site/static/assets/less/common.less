@@ -5,6 +5,18 @@
 	}
 	.fs-loop((@i + 1), @n);
 }
+//margin,padding设值
+.pos-loop(@i, @n) when (@i <= @n) {
+	.mt@{i} {margin-top: unit(@i,px);}
+	.mb@{i} {margin-bottom: unit(@i,px);}
+	.ml@{i} {margin-left: unit(@i,px);}
+	.mr@{i} {margin-right: unit(@i,px);}
+	.pt@{i} {padding-top: unit(@i,px);}
+	.pb@{i} {padding-bottom: unit(@i,px);}
+	.pl@{i} {padding-left: unit(@i,px);}
+	.pr@{i} {padding-right: unit(@i,px);}
+	.pos-loop((@i + 5), @n);
+}
 //bootstrap上col-lg, col-md, col-sm, col-xs修改
 .col-loop(@i, @n) when (@i <= @n) {
 	.col-lg-@{i},.col-md-@{i},.col-sm-@{i},.col-xs-@{i}{
@@ -13,21 +25,29 @@
 	.col-loop((@i + 1), @n);
 }
 
+
 a,a:link,a:visited,a:focus{text-decoration:none;}
 h1, h2, h3, h4, h5, h6 {margin-top: 0;margin-bottom: 0;}
 .img-100{width: 100%;}
 .cmm-h-ul >li{float: left; display: inline-block;}
+img.max-h{max-width: 100%;}	//防止 img 指定「height」时图片高度不能按照宽度等比缩放，导致图片变形
 
 .fs-loop(10,24);
 .col-loop(1,12);
+.pos-loop(5,40);
+// a:hover{color:#fd9925!important;}
 
-//bootstrap上修改
+//==============bootstrap上修改===========start
 .container {
 	padding-left: 0;
 	padding-right: 0;
 }
 .row{
 	margin: 0;	
+}
+ul, ol {
+	list-style-type: none;
+	list-style-image: none;
 }
 
 @media (max-width: 800px){
@@ -56,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {margin-top: 0;margin-bottom: 0;}
 		width: 1190px;
 	}
 }
-
+//==============bootstrap上修改===========end
 
 
 //批发市场

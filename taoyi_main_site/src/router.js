@@ -16,6 +16,9 @@ router.get("/", function(req, res, next) {
   var market_bags_Data = require("../data/market_bags.json");
   //淘亿推荐
   var taoee_recommend_Data = require("../data/taoee_recommend.json");
+
+  //首页焦点图json
+  var focus_Data = require("../data/focuspic.json");
   // 都渲染进index里面？？
 
   var options = {
@@ -24,7 +27,8 @@ router.get("/", function(req, res, next) {
     man: market_man_Data.data,
     brass: market_brass_Data.data,
     bags: market_bags_Data.data,
-    recommend: taoee_recommend_Data.data
+    recommend: taoee_recommend_Data.data,
+    focus: focus_Data.data
   };
   res.render("home", options);
 });

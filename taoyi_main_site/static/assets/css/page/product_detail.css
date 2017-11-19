@@ -28,6 +28,7 @@
 }
 .product-detail .main .left .jqzoom img {
   width: 354px;
+  max-width: none;
 }
 .product-detail .main .left .preview-scroll {
   margin-top: 5px;
@@ -59,7 +60,8 @@
   width: 500px;
 }
 .product-detail .main .center .productName {
-  height: 50px;
+  height: 56px;
+  line-height: 1.4;
   color: #404144;
   font-size: 18px;
 }

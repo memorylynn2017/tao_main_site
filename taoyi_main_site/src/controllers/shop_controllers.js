@@ -10,16 +10,9 @@ exports.dailyNew=function(req,res,next){
 
 //产品详情页
 exports.productDetail=function(req,res,next){
-    var detailData = require(process.cwd() + '/data/product_detail.json');
+    var detailData = require(process.cwd() + '/data/product_detail/'+req.params.id+'.json');
 	res.render('shop/product_detail',{
-        detail: detailData.data,
-        // helpers: {
-        //     isfirst: function(index, options) {
-        //       if ((index == 0)) {
-        //         return options.fn(this);
-        //       }
-        //     }
-        //   }
+        detail: detailData.data
     });
 }
 

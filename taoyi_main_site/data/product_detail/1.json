@@ -1,0 +1,55 @@
+{
+    "status": true,
+    "data": [
+        {
+            "id": "1",
+            "name": "M6053夏款男装短袖衬衫韩版修身短袖衬衫男潮流印花男士衬衫",
+            "typeName": "男士衬衫",
+            "cheapPrice": "60.00",
+            "taobaoPrice": "120.00",
+            "vipPrice": "55.00",
+            "evaluationNum": "11",
+            "volumeNum": "23",
+            "likeNum": "397",
+            "size": ["165/115斤内(M)", "170/125斤内(L)", "175/135斤内(XL)", "180/150斤内(2XL)", "185/160斤内(3XL)"],
+            "color": ["黑色", "白色", "蓝色", "杏色"],
+            "preview": [
+                {
+                    "simg": "http://gd4.alicdn.com/bao/uploaded/i4/687877487/TB2lGHXXXXXXXclXFXXXXXXXXXX_!!687877487.jpg",
+                    "bimg": "http://gd4.alicdn.com/bao/uploaded/i4/687877487/TB2lGHXXXXXXXclXFXXXXXXXXXX_!!687877487.jpg"
+                },
+                {
+                    "simg": "http://gd4.alicdn.com/imgextra/i4/687877487/TB2aWFWkXXXXXbWXpXXXXXXXXXX_!!687877487.jpg",
+                    "bimg": "http://gd4.alicdn.com/imgextra/i4/687877487/TB2aWFWkXXXXXbWXpXXXXXXXXXX_!!687877487.jpg"
+                }
+            ],
+            "store": [
+                {
+                    "id": "56",
+                    "name": "芭巴巴牛仔1"
+                }
+            ],
+            "productAttr":[
+                "厚薄: 薄款",
+                "袖长: 短袖",
+                "货号: 6053 ",
+                "版型: 修身 ",
+                "领型: 尖领（常规）", 
+                "颜色: 黑色 白色 蓝色 杏色 ",
+                "尺码: 165/115斤内(M) 170/125斤内(L) 175/135斤内(XL) 180/150斤内(2XL) 185/160斤内(3XL) ",
+                "品牌: MASILOU/玛狮路 ",
+                "材质: 棉 ",
+                "棉含量: 95%以上 ",
+                "上市时间: 2016年 ",
+                "适用场景: 日常 ",
+                "适用季节: 夏季 ",
+                "适用对象: 青少年 ",
+                "基础风格: 青春流行 ",
+                "细分风格: 青春活力 ",
+                "图案: 其他 ",
+                "服饰工艺: 水洗 ",
+                "服装款式细节: 印花"
+            ]
+        }
+    ]
+}
