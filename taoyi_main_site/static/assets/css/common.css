@@ -544,7 +544,8 @@ ol {
 }
 .productitem .item-content dd .name {
   color: #666;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 16px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -772,6 +773,7 @@ ol {
 /* 相连的3个按钮样式 */
 .btn-group.btngroup3 .btn {
   padding: 6px 20px;
+  font-size: 12px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 0;

@@ -27,6 +27,8 @@
   margin-bottom: 0;
 }
 .market .selection .form-group .control-label {
+  font-size: 12px;
+  font-weight: normal;
   color: #666666;
   padding-right: 8px;
 }
@@ -37,6 +39,7 @@
 .market .selection .form-group .form-control-static a {
   display: inline-block;
   padding: 2px 10px;
+  font-size: 12px;
   color: #039;
   text-decoration: none;
   outline: none;
@@ -89,17 +92,25 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 5px;
 }
 .market .shopbox .shopitem .shopname a {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   color: red;
 }
 .market .shopbox .shopitem .shopcontent div {
   width: 50%;
   float: left;
+  font-size: 12px;
+  color: #999;
+  line-height: 24px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.market .shopbox .shopitem .shopcontent div i {
+  font-style: normal;
 }
 .market .pag ul {
   margin-top: 60px;
