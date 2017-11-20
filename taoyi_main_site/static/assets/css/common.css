@@ -530,6 +530,7 @@ ol {
 }
 .productitem .item-content dd {
   margin: 0 9px 9px 9px;
+  height: 80px;
 }
 .productitem .item-content dd .msg {
   margin-top: 5px;

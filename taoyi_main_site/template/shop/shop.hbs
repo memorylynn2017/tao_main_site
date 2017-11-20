@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="/assets/css/page/shop.css">
+<div class="shop container">
+
+    <div class="shop-main mt10 clearfix">
+        {{!-- 商店信息 --}}
+        <div class="shop-info pull-left">
+            <div class="shop-name fs-18">红苹果二店</div>
+            <ul class="shop-data">
+                <li>地址： 大西豪 _1楼_ B03D</li>
+                <li>主营：时尚女装批发</li>
+                <li>商品数量：143款</li>
+                <li>销量：495</li>
+                <li>访问量：0</li>
+                <li>排名：</li>
+                <li>商家类型：A类</li>
+                <li>更新时间：2017-09-04</li>
+                <li class="btns">
+                    <a class="c-blue" href="">关注商家(0)</a>
+                    <a href="">去淘宝</a>
+                </li>
+                <li>电话：18620286668</li>
+                <li>QQ：13147930</li>
+            </ul>
+        </div>
+        {{!-- 右侧 --}}
+        <div class="right pull-right">
+            <div class="signature clearfix">
+                <a class="pull-left" href="#"><img src="http://www.taoee.com/template/20140828/Images/signature-left.jpg" alt=""></a>
+                <a class="pull-left" href="#"><img src="http://www.taoee.com/template/20140828/Images/signature-center.jpg" alt=""></a>
+                <a class="pull-left" href="#"><img src="http://www.taoee.com/template/20140828/Images/signature-right.jpg" alt=""></a>
+            </div>
+            <div class="shop-type">
+                <div class="bar clearfix">
+                    <div class="title pull-left fs-18">商品分类</div>
+                    <input class="submit pull-right" type="submit" value="搜索">
+                    <input class="search-txt pull-right" type="text" value="">
+                </div>
+                <div class="con">
+                    <a href="">所有商品</a>
+                    <a href="">女装 (72)</a>
+                    <a href="">长裙 (1)</a>
+                    <a href="">女装 (72)</a>
+                    <a href="">长裙 (1)</a>
+                    <a href="">女装 (72)</a>
+                    <a href="">长裙 (1)</a>
+                    <a href="">女装 (72)</a>
+                    <a href="">长裙 (1)</a>
+                    <a href="">女装 (72)</a>
+                    <a href="">长裙 (1)</a>
+                    <a href="">女装 (72)</a>
+                    <a href="">长裙 (1)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt15 mb15 clearfix">
+        <div class="btn-group btn-group-sm btngroup3 pull-left" role="group" aria-label="">
+            <button type="button" class="btn active">销量</button>
+            <button type="button" class="btn">价格</button>
+            <button type="button" class="btn">上新时间</button>
+            <button type="button" class="btn">下架商品</button>
+        </div>
+        <div class="pull-right">
+            1/2页 共143款商品
+        </div>
+    </div>
+
+    {{!-- 商品列表 --}}
+    <div class="contentbox" id="contentbox">
+        <ul class="qf">
+            {{#each shop_pro_list}}
+            <li class="productitem">
+                <a href="{{url}}">
+                    <dl class="item-content">
+                        <dt>
+                            <img src="{{img}}" alt="">
+                        </dt>
+                        <dd>
+                            <div class="msg qf">
+                                <strong class="price fl">￥{{price}}</strong>
+                                <span class="fr">已批
+                                    <strong>{{num}}</strong>件</span>
+                            </div>
+                            <p class="name">{{name}}</p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    
+</div>
+{{> component/footer_other}}
