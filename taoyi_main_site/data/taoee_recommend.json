@@ -1,151 +1,265 @@
 {
     "status": true,
     "data": [{
-      "detail": [
+      "detailone": [
         {
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/f7e7d25b5f97425d95d9751fb5cfef93.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/1d82fd5ce43c4024ada8594e4d2a86a9.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/95a372af8195458fab2ba2e5f2a0fbb1.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/73050a1fba814143a118cc753eb2defe.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/25be306c2f80419d8a84e7f716e8dbc8.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/f7e7d25b5f97425d95d9751fb5cfef93.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/1d82fd5ce43c4024ada8594e4d2a86a9.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/95a372af8195458fab2ba2e5f2a0fbb1.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/73050a1fba814143a118cc753eb2defe.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/25be306c2f80419d8a84e7f716e8dbc8.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        }
+      ],
+      "detailtwo": [
+        {
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/f7e7d25b5f97425d95d9751fb5cfef93.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/1d82fd5ce43c4024ada8594e4d2a86a9.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/95a372af8195458fab2ba2e5f2a0fbb1.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/73050a1fba814143a118cc753eb2defe.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/25be306c2f80419d8a84e7f716e8dbc8.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/f7e7d25b5f97425d95d9751fb5cfef93.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/1d82fd5ce43c4024ada8594e4d2a86a9.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/95a372af8195458fab2ba2e5f2a0fbb1.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/73050a1fba814143a118cc753eb2defe.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/25be306c2f80419d8a84e7f716e8dbc8.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        }
+      ],
+      "detailthree": [
+        {
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/f7e7d25b5f97425d95d9751fb5cfef93.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         },{
           "url": "/shop/product_detail/123456",
-          "img": "https://img.alicdn.com/bao/uploaded/i2/188623377/TB26Y6Rc4PI8KJjSspfXXcCFXXa_!!188623377.jpg_300x300.jpg",
+          "img": "http://www.taoee.com/upload/image/1d82fd5ce43c4024ada8594e4d2a86a9.jpg",
           "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
           "price": "30.00",
-          "shopname": "良品轩服饰"
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/95a372af8195458fab2ba2e5f2a0fbb1.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/73050a1fba814143a118cc753eb2defe.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/25be306c2f80419d8a84e7f716e8dbc8.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/f7e7d25b5f97425d95d9751fb5cfef93.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/1d82fd5ce43c4024ada8594e4d2a86a9.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/95a372af8195458fab2ba2e5f2a0fbb1.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/73050a1fba814143a118cc753eb2defe.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
+        },{
+          "url": "/shop/product_detail/123456",
+          "img": "http://www.taoee.com/upload/image/25be306c2f80419d8a84e7f716e8dbc8.jpg",
+          "name": "2017冬季季新款粉色ulzzang套头加绒卫衣外套女装chic假两件上衣",
+          "price": "30.00",
+          "shopname": "良品轩服饰",
+          "shopurl": "http://www.taoee.com/18665010180"
         }
       ]}
     ]}
