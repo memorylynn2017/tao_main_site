@@ -1,0 +1,100 @@
+.shop .shop-main .shop-info {
+  width: 218px;
+  border: 1px solid #ddd;
+}
+.shop .shop-main .shop-info .shop-name {
+  padding-left: 20px;
+  height: 37px;
+  line-height: 37px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  color: #ff0001;
+}
+.shop .shop-main .shop-info .shop-data {
+  margin: 7px 0;
+}
+.shop .shop-main .shop-info .shop-data li {
+  padding-left: 20px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 12px;
+}
+.shop .shop-main .shop-info .shop-data li.btns {
+  padding-top: 10px;
+  height: auto;
+  line-height: auto;
+  border-top: 1px dashed #ddd;
+}
+.shop .shop-main .shop-info .shop-data li.btns a {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 1px 6px;
+  line-height: 1.4;
+  background: #b5b7b5;
+  color: #fff;
+  font-size: 14px;
+}
+.shop .shop-main .shop-info .shop-data li.btns a.c-blue {
+  background: #7297c1;
+}
+.shop .shop-main .right {
+  width: 960px;
+}
+.shop .shop-main .right .signature a {
+  margin: 0 2px 0 0;
+}
+.shop .shop-main .right .signature a:last-child {
+  margin: 0;
+}
+.shop .shop-main .right .shop-type {
+  margin-top: 10px;
+  height: 123px;
+  border: 1px solid #ddd;
+}
+.shop .shop-main .right .shop-type .bar {
+  padding: 0 15px;
+  height: 36px;
+  line-height: 36px;
+  background: #f7f7f7;
+}
+.shop .shop-main .right .shop-type .bar .title {
+  color: #656d77;
+}
+.shop .shop-main .right .shop-type .bar .search-txt {
+  margin: 5px 0 0 0;
+  width: 200px;
+  height: 26px;
+}
+.shop .shop-main .right .shop-type .bar .submit {
+  margin: 5px 0 0 10px;
+  width: 60px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  background: #efefef;
+  border: 1px solid #ddd;
+}
+.shop .shop-main .right .shop-type .con a {
+  display: inline-block;
+  padding: 10px 15px 0 15px;
+  line-height: 1;
+  color: #656d77;
+}
+.shop .shop-main .right .shop-type .con a:hover {
+  color: #ff0001;
+}
+.shop .contentbox {
+  margin: 0 -5px;
+}
+.shop .contentbox .productitem {
+  width: 20%;
+  float: left;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .shop .contentbox .productitem {
+    width: 33.3%;
+  }
+}

@@ -53,7 +53,7 @@
   margin: 40px 0;
 }
 .header .header-main .search-frame {
-  margin-top: 50px;
+  margin-top: 55px;
   height: 40px;
 }
 .header .header-main .search-frame .search-box {
@@ -98,16 +98,45 @@
   color: #fff;
   background: #ff0000;
 }
-.header .header-main .search-frame .cart-btn {
+.header .header-main .search-frame .cart {
+  position: relative;
   display: inline-block;
   margin-left: 10px;
+}
+.header .header-main .search-frame .cart .cart-btn {
+  position: relative;
+  display: block;
   width: 130px;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: #ffdb3d;
+  background-color: #ffdb3d;
+  border: 1px solid #FFDB3D;
   color: #000;
   font-size: 14px;
+  z-index: 9;
+}
+.header .header-main .search-frame .cart .cart-yc {
+  display: none;
+  position: absolute;
+  padding: 10px 11px;
+  top: 55px;
+  right: 0;
+  width: 260px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #FF4A00;
+  z-index: 1;
+}
+.header .header-main .search-frame .cart:hover .cart-btn {
+  height: 56px;
+  color: #FF4A00;
+  background-color: #fff;
+  border: 1px solid #FF4A00;
+  border-bottom: 0;
+}
+.header .header-main .search-frame .cart:hover .cart-yc {
+  display: block;
 }
 .header .header-nav {
   height: 50px;

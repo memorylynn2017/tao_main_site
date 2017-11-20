@@ -36,31 +36,16 @@ router.get("/", function(req, res, next) {
 
 //跳转到注册页面
 router.get("/register", require("../src/controllers/user_controllers").register);
-
 //跳转到登录页面
 router.get("/login", require("../src/controllers/user_controllers").login);
 
+//=============================头部导航路径
 //每日一款
-router.get(
-  "/shop/dailyNew",
-  require("../src/controllers/shop_controllers").dailyNew
-);
-
-//商品详情页
-router.get("/shop/productDetail", function (req, res, next) {
-  res.render("shop/productDetail");
-});
-
+router.get("/shop/dailyNew", require("../src/controllers/shop_controllers").dailyNew);
 //逛市场
-router.get(
-  "/shop/seller", 
-  require("../src/controllers/shop_controllers").seller
-);
+router.get("/shop/seller", require("../src/controllers/shop_controllers").seller);
 //实拍优选
-router.get(
-  "/shop/orderRemit", 
-  require("../src/controllers/shop_controllers").orderRemit
-);
+router.get("/shop/orderRemit", require("../src/controllers/shop_controllers").orderRemit);
 //服务
 router.get("/shop/service", function(req, res, next) {
   res.render("shop/service");
@@ -70,14 +55,21 @@ router.get("/shop/clearStore", function(req, res, next) {
   res.render("shop/clearStore");
 });
 
+//=============================
+//商店页
+router.get("/:id", require("../src/controllers/shop_controllers").shop);
+//商品详情页
+router.get("/shop/productDetail", function (req, res, next) {
+  res.render("shop/productDetail");
+});
 //产品列表
 router.get("/shop/product_infolist/:id", function(req, res, next) {
   res.render("shop/product_infolist");
 });
 //产品详情页
-router.get("/shop/productDetail/:id", function (req, res, next) {
-  res.render("shop/productDetail");
-});
+// router.get("/shop/productDetail/:id", function (req, res, next) {
+//   res.render("shop/productDetail");
+// });
 //产品详情页
 router.get("/shop/product_detail/:id", require("../src/controllers/shop_controllers").productDetail);
 

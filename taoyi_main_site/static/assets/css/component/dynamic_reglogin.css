@@ -1,0 +1,29 @@
+.dynamic-reglogin {
+  background-color: #fff;
+}
+.dynamic-reglogin a.btn {
+  float: left;
+  display: inline-block;
+  padding: 0;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 0;
+}
+.dynamic-reglogin a.btn.reg {
+  background-color: #0883FF;
+}
+.dynamic-reglogin a.btn.login {
+  background-color: #ff722e;
+}
+.dynamic-reglogin a.btn:hover {
+  background-color: #e00014;
+}
+.dynamic-reglogin .info {
+  padding: 20px 0 0 20px;
+  height: 99px;
+}
+.dynamic-reglogin .info li {
+  height: 25px;
+}

@@ -1,0 +1,28 @@
+.dynamic-info {
+  background-color: #fff;
+}
+.dynamic-info .tab {
+  height: 41px;
+  line-height: 40px;
+}
+.dynamic-info .tab span {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: inherit;
+  text-align: center;
+  border-bottom: 1px solid #c9c9c9;
+  cursor: pointer;
+}
+.dynamic-info .tab span.on {
+  border-bottom: 1px solid #fd9925;
+}
+.dynamic-info .desc {
+  height: 120px;
+  padding-top: 5px;
+}
+.dynamic-info .desc ul li {
+  padding: 0 15px;
+  height: 36px;
+  line-height: 36px;
+}

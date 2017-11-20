@@ -1,0 +1,113 @@
+.shop {
+    .shop-main{
+        // 商店信息
+        .shop-info{
+            width: 218px;
+            border: 1px solid #ddd;
+            .shop-name{
+                padding-left: 20px;
+                height: 37px;
+                line-height: 37px;
+                background: #f7f7f7;
+                border-bottom: 1px solid #ddd;
+                color: #ff0001;
+            }
+            .shop-data{
+                margin: 7px 0;
+                li{
+                    padding-left: 20px;
+                    height: 29px;
+                    line-height: 29px;
+                    font-size: 12px;
+                    &.btns{
+                        padding-top: 10px;
+                        height: auto;
+                        line-height: auto;
+                        border-top: 1px dashed #ddd;
+                        a{
+                            display: inline-block;
+                            margin-right: 20px;
+                            padding: 1px 6px;
+                            line-height: 1.4;
+                            background: #b5b7b5;
+                            color: #fff;
+                            font-size: 14px;
+                            &.c-blue{
+                                background: #7297c1;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        // 右侧
+        .right{
+            width: 960px;
+            .signature{
+                a{
+                    margin: 0 2px 0 0;
+                    &:last-child{
+                        margin: 0;
+                    }
+                }
+            }
+            .shop-type{
+                margin-top: 10px;
+                height: 123px;
+                border: 1px solid #ddd;
+                .bar{
+                    padding: 0 15px;
+                    height: 36px;
+                    line-height: 36px;
+                    background: #f7f7f7;
+                    .title{
+                        color: #656d77;
+                    }
+                    .search-txt{
+                        margin: 5px 0 0 0;
+                        width: 200px;
+                        height: 26px;
+                    }
+                    .submit{
+                        margin: 5px 0 0 10px;
+                        width: 60px;
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 12px;
+                        background: #efefef;
+                        border: 1px solid #ddd;
+                    }
+                }
+                .con{
+                    a{
+                        display: inline-block;
+                        padding: 10px 15px 0 15px;
+                        line-height: 1;
+                        color: #656d77;
+                        &:hover{
+                            color: #ff0001;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 商品列表
+    .contentbox {
+      margin: 0 -5px;
+      .productitem {
+        width: 20%;
+        float: left;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .shop .contentbox .productitem {
+      width: 33.3%;
+    }
+  }

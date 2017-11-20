@@ -8,14 +8,6 @@ exports.dailyNew=function(req,res,next){
     });
 }
 
-//产品详情页
-exports.productDetail=function(req,res,next){
-    var detailData = require(process.cwd() + '/data/product_detail/'+req.params.id+'.json');
-	res.render('shop/product_detail',{
-        detail: detailData.data
-    });
-}
-
 //逛市场
 exports.seller=function(req,res,next) {
     var sellerData = require(process.cwd() + '/data/shop_product.json');
@@ -31,5 +23,24 @@ exports.orderRemit=function(req,res,next){
     var listData = require(process.cwd() + '/data/order_remit.json');
 	res.render('shop/orderRemit',{
         list: listData.data,
+    });
+}
+
+//商家页
+exports.shop=function(req,res,next){
+    // var detailData = require(process.cwd() + '/data/product_detail/'+req.params.id+'.json');
+    var listData = require(process.cwd() + '/data/product_list.json');
+    // res.locals.shop_pro_list = listData.data;
+	res.render('shop/shop',{
+        // detail: detailData.data,
+        shop_pro_list: listData.data
+    });
+}
+
+//产品详情页
+exports.productDetail=function(req,res,next){
+    var detailData = require(process.cwd() + '/data/product_detail/'+req.params.id+'.json');
+	res.render('shop/product_detail',{
+        detail: detailData.data
     });
 }
