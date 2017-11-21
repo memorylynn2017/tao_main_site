@@ -1,0 +1,19 @@
+{
+    "status": true,
+    "data": [
+        {
+            "id": "18620286668",
+            "name": "红苹果二店",
+            "address": "大西豪 _1楼_ B03D",
+            "business": "时尚女装批发",
+            "num": 143,
+            "sales": 695,
+            "views": 100,
+            "rank": 12,
+            "businessType": "A类",
+            "updateTime": "2017-09-04",
+            "phone": "18620286668",
+            "qq": "13147930"
+        }
+    ]
+}

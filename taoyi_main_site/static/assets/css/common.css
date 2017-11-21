@@ -524,9 +524,12 @@ ol {
   border: 1px solid #ddd;
   margin-bottom: 10px;
 }
+.productitem .item-content dt {
+  height: 228px;
+  overflow: hidden;
+}
 .productitem .item-content dt img {
-  width: 100%;
-  vertical-align: top;
+  height: 100%;
 }
 .productitem .item-content dd {
   margin: 0 9px 9px 9px;

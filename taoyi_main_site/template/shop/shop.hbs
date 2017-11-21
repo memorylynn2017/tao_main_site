@@ -3,25 +3,27 @@
 
     <div class="shop-main mt10 clearfix">
         {{!-- 商店信息 --}}
+        {{#each shop_info}}
         <div class="shop-info pull-left">
-            <div class="shop-name fs-18">红苹果二店</div>
+            <div class="shop-name fs-18">{{name}}</div>
             <ul class="shop-data">
-                <li>地址： 大西豪 _1楼_ B03D</li>
-                <li>主营：时尚女装批发</li>
-                <li>商品数量：143款</li>
-                <li>销量：495</li>
-                <li>访问量：0</li>
-                <li>排名：</li>
-                <li>商家类型：A类</li>
-                <li>更新时间：2017-09-04</li>
+                <li>地址： {{address}}</li>
+                <li>主营：{{business}}</li>
+                <li>商品数量：{{num}}款</li>
+                <li>销量：{{sales}}</li>
+                <li>访问量：{{views}}</li>
+                <li>排名：{{rank}}</li>
+                <li>商家类型：{{businessType}}</li>
+                <li>更新时间：{{updateTime}}</li>
                 <li class="btns">
                     <a class="c-blue" href="">关注商家(0)</a>
                     <a href="">去淘宝</a>
                 </li>
-                <li>电话：18620286668</li>
-                <li>QQ：13147930</li>
+                <li>电话：{{phone}}</li>
+                <li>QQ：{{qq}}</li>
             </ul>
         </div>
+        {{/each}}
         {{!-- 右侧 --}}
         <div class="right pull-right">
             <div class="signature clearfix">
@@ -55,21 +57,22 @@
     </div>
 
     <div class="mt15 mb15 clearfix">
-        <div class="btn-group btn-group-sm btngroup3 pull-left" role="group" aria-label="">
+        {{!-- 筛选 --}}
+        <div class="btn-group btn-group-sm btngroup3 pull-left screening" role="group" aria-label="">
             <button type="button" class="btn active">销量</button>
             <button type="button" class="btn">价格</button>
             <button type="button" class="btn">上新时间</button>
             <button type="button" class="btn">下架商品</button>
         </div>
         <div class="pull-right">
-            1/2页 共143款商品
+            1/2页 共<span>143</span>款商品
         </div>
     </div>
 
     {{!-- 商品列表 --}}
     <div class="contentbox" id="contentbox">
         <ul class="qf">
-            {{#each shop_pro_list}}
+            {{#each product_info}}
             <li class="productitem">
                 <a href="{{url}}">
                     <dl class="item-content">

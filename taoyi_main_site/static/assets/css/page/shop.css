@@ -83,6 +83,9 @@
 .shop .shop-main .right .shop-type .con a:hover {
   color: #ff0001;
 }
+.shop .screening .btn {
+  font-size: 14px;
+}
 .shop .contentbox {
   margin: 0 -5px;
 }

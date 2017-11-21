@@ -231,11 +231,20 @@ ul, ol {
 	}
 	.item-content {
 	  border: 1px solid #ddd;
-	  margin-bottom: 10px;
-	  dt img {
-		width: 100%;
-		vertical-align: top;
-	  }
+		margin-bottom: 10px;
+		//这是以图片宽度来设置
+	  // dt img {
+		// width: 100%;
+		// vertical-align: top;
+		// }
+		//这是以图片高度来设置
+		dt{
+			height: 228px;
+			overflow: hidden;
+			img{
+				height: 100%;
+			}
+		}
 	  dd {
 		margin: 0 9px 9px 9px;
 		height: 80px;

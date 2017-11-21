@@ -29,11 +29,17 @@ exports.orderRemit=function(req,res,next){
 //商家页
 exports.shop=function(req,res,next){
     // var detailData = require(process.cwd() + '/data/product_detail/'+req.params.id+'.json');
-    var listData = require(process.cwd() + '/data/product_list.json');
+    // var listData = require(process.cwd() + '/data/product_list.json');
+
     // res.locals.shop_pro_list = listData.data;
+    // 商店信息
+    var shopData = require(process.cwd() + '/data/shop/'+req.params.id+'.json');
+    var shopProductData = require(process.cwd() + '/data/shop/'+req.params.id+'_product.json');
+
 	res.render('shop/shop',{
         // detail: detailData.data,
-        shop_pro_list: listData.data
+        shop_info: shopData.data,
+        product_info: shopProductData.data
     });
 }
 
