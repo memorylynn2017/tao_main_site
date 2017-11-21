@@ -5,7 +5,7 @@
       <div class="hd pull-left">
           <ul>
             {{!-- 左侧导航 --}}
-            {{#each data}}
+            {{#each serviceData}}
               <h2 class="title">{{label}}</h2>
               {{#each con}}
                 <li><a href="javascript:;">{{label}}</a></li>
@@ -60,7 +60,7 @@
             </ul>
           </div>
           {{!-- 右侧内容列表 --}}
-          {{#each data}}
+          {{#each serviceData}}
             {{#each con}}
               <ul>
                 <h2 class="title">{{label}}</h2>
