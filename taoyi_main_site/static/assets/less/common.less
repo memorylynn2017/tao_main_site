@@ -536,3 +536,43 @@ ul, ol {
 			}
 	}
 }
+
+// 滑动门
+.slide-box{
+	.hd{
+		width: 218px;
+		background: #fafafa;
+		ul{
+			h2.title{
+				margin: 0 30px;
+				line-height: 50px;
+				font-size: 18px;
+				border-bottom: 1px solid #ddd;
+			}
+			li{
+				padding: 0 30px;
+				line-height: 43px;
+				&.on{
+					padding-left: 26px;
+					border-left: 4px solid #ff0001;
+				}
+				a{
+					color: #656d77;
+					&:hover{
+						color: #fd9925;
+					}
+				}
+			}
+		}
+	}
+	.bd{
+		width: 950px;
+		ul{
+			h2.title{
+				line-height: 50px;
+				font-size: 18px;
+				border-bottom: 1px solid #ddd;
+			}
+		}
+	}
+}

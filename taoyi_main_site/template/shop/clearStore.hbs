@@ -1,2 +1,35 @@
-<h1>尾品汇</h1>
+<link rel="stylesheet" href="/assets/css/page/orderremit.css">
+<div class="orderremit container">
+    <div class="titlepic"><img src="http://www.taoee.com/template/20140828/Images/1190-320/1190-320-2.jpg" class="img-responsive" alt=""></div>
+    <div class="sort pull-right">
+        <div class="btn-group btn-group-sm btngroup3" role="group" aria-label="">
+            <button type="button" class="btn">时间</button>
+            <button type="button" class="btn">价格</button>
+            <button type="button" class="btn">销量</button>
+        </div>
+    </div>
+    <div class="productshow">
+        <ul class="qf">
+            {{#each list}}
+            <li class="productitem">
+                <a href="{{url}}">
+                    <dl class="item-content">
+                        <dt>
+                            <img src="{{img}}" alt="">
+                        </dt>
+                        <dd>
+                            <div class="msg qf">
+                                <strong class="price fl">￥{{price}}</strong>
+                                <span class="fr">已批
+                                    <strong>{{num}}</strong>件</span>
+                            </div>
+                            <p class="name">{{name}}</p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
 {{> component/footer_other}}

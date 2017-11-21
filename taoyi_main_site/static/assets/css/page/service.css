@@ -1,0 +1,36 @@
+.service .service-con .contact li {
+  float: left;
+  width: 25%;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+}
+.service .service-con .contact li .a-btn {
+  padding: 5px 12px;
+  font-size: 14px;
+  color: #fff;
+  background: #ff0001;
+}
+.service .service-con h3 {
+  line-height: 50px;
+  color: #000;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+.service .service-con .problems li {
+  float: left;
+  width: 230px;
+  height: 100px;
+  margin: 0 5px 5px 0;
+  background: #fafafa;
+  text-align: center;
+}
+.service .service-con .problems li a {
+  color: #656d77;
+}
+.service .bd > ul {
+  display: none;
+}
+.service .bd > ul.on {
+  display: block;
+}

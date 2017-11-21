@@ -1,89 +1,87 @@
-<h1>服务</h1>
+<link rel="stylesheet" href="/assets/css/page/service.css">
 
-
-<link rel="stylesheet" href="/assets/plugins/swiper/swiper.min.css">
-  <style>
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      height: 200px;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
 <div class="container">
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <a href="javascript:;"></a>
-        </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
-        <div class="swiper-slide">Slide 11</div>
-        <div class="swiper-slide">Slide 12</div>
-        <div class="swiper-slide">Slide 13</div>
-        <div class="swiper-slide">Slide 14</div>
-        <div class="swiper-slide">Slide 15</div>
-        <div class="swiper-slide">Slide 16</div>
-        <div class="swiper-slide">Slide 17</div>
-        <div class="swiper-slide">Slide 18</div>
-        <div class="swiper-slide">Slide 19</div>
-        <div class="swiper-slide">Slide 20</div>
-        <div class="swiper-slide">Slide 21</div>
-        <div class="swiper-slide">Slide 22</div>
-        <div class="swiper-slide">Slide 23</div>
-        <div class="swiper-slide">Slide 24</div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-</div>
+  <div class="slide-box service mt10 mb10 clearfix">
+      <div class="hd pull-left">
+          <ul>
+            {{!-- 左侧导航 --}}
+            {{#each data}}
+              <h2 class="title">{{label}}</h2>
+              {{#each con}}
+                <li><a href="javascript:;">{{label}}</a></li>
+              {{/each}}
+            {{/each}}
+          </ul>
+      </div>
+      <div class="bd pull-right">
+          <div class="service-con">
+            <div class="banner">
+              <img src="http://www.taoee.com/template/20140828/Images/950-320.jpg" alt="">
+            </div>
+            <ul class="contact mt10 mb10 clearfix fs-14">
+              <li>
+                  <p><img src="http://www.taoee.com/template/20140828/Images/55-55/55-55-1.png"></p>
+                  <p><span class="fs-20">6x8在线客服</span></p>
+                  <p>企业QQ：<font color="red">800051368</font></p>
+                  <p>为您解决遇到的问题 </p>
+                  <p><a href="#" class="a-btn">立即咨询</a></p>
+              </li>
+              <li>
+                  <p><img src="http://www.taoee.com/template/20140828/Images/55-55/55-55-2.png"></p>
+                  <p><span class="fs-20">400-030-1688</span></p>
+                  <p>周一至周六 09：00至18：00</p>
+                  <p>节假日另行通知</p>
+              </li>
+              <li>
+                  <p><img src="http://www.taoee.com/template/20140828/Images/55-55/55-55-3.png"></p>
+                  <p><span class="fs-20">在线留言</span></p>
+                  <p>如果您有更好的建议提供</p>
+                  <p>我们将努力做到更好</p>
+                  <p><a href="#" class="a-btn">留言板</a></p>
+              </li>
+              <li>
+                  <p><img src="http://www.taoee.com/template/20140828/Images/55-55/55-55-4.png"></p>
+                  <p><span class="fs-20">邮箱</span></p>
+                  <p>您有任何问题可以发送邮件至</p>
+                  <p><font color="red">KF@taoee.com</font></p>
+                  <p>我们客服人员将尽快回复您</p>
+              </li>
+            </ul>
+            <h3>常见问题</h3>
+            <ul class="problems mt20 fs-14">
+              <li><a href="#"><p><img src=""></p><p>国外客户怎么支付？</p></a></li>
+              <li><a href="#"><p><img src=""></p><p>账户余额可以提现吗？</p></a></li>
+              <li><a href="#"><p><img src=""></p><p>多少件起批？</p></a></li>
+              <li><a href="#"><p><img src=""></p><p>批发有没有优惠啊？</p></a></li>
+              <li><a href="#"><p><img src=""></p><p>如何成为VIP会员？</p></a></li>
+              <li><a href="#"><p><img src=""></p><p>如何申请网店代理？</p></a></li>
+              <li><a href="#"><p><img src=""></p><p>订单可以取消吗？</p></a></li>
+              <li><a href="#"><p><img src=""></p><p>忘记密码怎么办？</p></a></li>
+            </ul>
+          </div>
+          {{!-- 右侧内容列表 --}}
+          {{#each data}}
+            {{#each con}}
+              <ul>
+                <h2 class="title">{{label}}</h2>
+                <li>{{{con}}}</li>
+              </ul>
+            {{/each}}
+          {{/each}}
+      </div>
+  </div>
 </div>
 {{> component/footer_other}}
-
-<script src="/assets/plugins/swiper/swiper.min.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 6,
-      slidesPerGroup: 12,
-      slidesPerColumn: 2,
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+    $(document).ready(function () {
+        var service_obj = $('.service');
+        service_obj.find('.hd>ul>li').on('click',function(){
+          // 状态
+          $(this).addClass("on").siblings().removeClass("on");
+
+          service_obj.find('.service-con').hide();
+          var _index = $(this).index()-1;
+          service_obj.find('.bd>ul:eq('+_index+')').addClass("on").siblings().removeClass("on");
+        })
     });
 </script>

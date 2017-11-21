@@ -47,9 +47,7 @@ router.get("/shop/seller", require("../src/controllers/shop_controllers").seller
 //实拍优选
 router.get("/shop/orderRemit", require("../src/controllers/shop_controllers").orderRemit);
 //服务
-router.get("/shop/service", function(req, res, next) {
-  res.render("shop/service");
-});
+router.get("/shop/service", require("../src/controllers/service_controllers"));
 //尾品汇
 router.get("/shop/clearStore", function(req, res, next) {
   res.render("shop/clearStore");
