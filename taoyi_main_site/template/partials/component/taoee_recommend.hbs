@@ -1,76 +1,161 @@
 
-<link rel="stylesheet" href="/assets/plugins/swiper/swiper.min.css">
-  <style>
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
-<div class="container">
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        {{#each this.detail}}
-        <div class="swiper-slide row productbox">
-            <a href="{{url}}">
-                <dl class="item-content">
-                    <dt>
-                        <img src="{{img}}" alt="">
-                    </dt>
-                    <dd>
-                        <p class="name">{{name}}</p>
-                        <div class="msg qf">
-                            <strong class="price fl">￥{{price}}</strong>
-                            <span class="fr">{{shopname}}</span>
-                        </div> 
-                    </dd>
-                </dl>
+<link rel="stylesheet" href="/assets/plugins/swiper/idangerous.swiper.css">
+<div class="title qf">
+    <span>淘艺
+        <i>推荐</i>
+    </span>
+    <ul class="qf"  id="tabsSpecialStalls">
+        <li class="active">优雅淑女</li>
+        <li>欧美外贸</li>
+        <li>气质名媛</li>
+    </ul>
+</div>   
+<div id="specialStalls" class="productbox">
+	<div class="swiper-wrapper">
+		  <div class="swiper-slide">
+        <div class="row">
+          {{#each this.detailone}}
+          <div class="product col-sm-2">
+            <a class="picbox" href="{{url}}">
+                <img class="img-responsive" src="{{img}}" alt="">
             </a>
+            <p class="name">{{name}}</p>
+            <p class="qf msg">
+                <span class="fl price">￥{{price}}</span>
+                <a href="{{shopurl}}"  class="fl shopname">{{shopname}}</a>
+            </p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="row">
+          {{#each this.detailtwo}}
+          <div class="product col-sm-2">
+            <a class="picbox" href="{{url}}">
+                <img class="img-responsive" src="{{img}}" alt="">
+            </a>
+            <p class="name">{{name}}</p>
+            <p class="qf msg">
+                <span class="fl price">￥{{price}}</span>
+                <a href="{{shopurl}}"  class="fl shopname">{{shopname}}</a>
+            </p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="row">
+          {{#each this.detailthree}}
+          <div class="product col-sm-2">
+            <a class="picbox" href="{{url}}">
+                <img class="img-responsive" src="{{img}}" alt="">
+            </a>
+            <p class="name">{{name}}</p>
+            <p class="qf msg">
+                <span class="fl price">￥{{price}}</span>
+                <a href="{{shopurl}}"  class="fl shopname">{{shopname}}</a>
+            </p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+{{!-- <div class="swiper-container productbox">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        {{#each this.detailone}}
+        <div class="product">
+          <a class="picbox" href="{{url}}">
+              <img class="img-responsive" src="{{img}}" alt="">
+          </a>
+          <p class="name">{{name}}</p>
+          <p class="qf">
+              <span class="fl price">￥{{price}}</span>
+              <a href="{{shopurl}}"  class="fl shopname">{{shopname}}</a>
+          </p>
         </div>
         {{/each}}
+      </div>
+      <div class="swiper-slide">
+        {{#each this.detailtwo}}
+        <div class="product">
+          <a class="picbox" href="{{url}}">
+              <img class="img-responsive" src="{{img}}" alt="">
+          </a>
+          <p class="name">{{name}}</p>
+          <p class="qf">
+              <span class="fl price">￥{{price}}</span>
+              <a href="{{shopurl}}"  class="fl shopname">{{shopname}}</a>
+          </p>
+        </div>
+        {{/each}}
+      </div>
+      <div class="swiper-slide">
+        {{#each this.detailthree}}
+        <div class="product">
+          <a class="picbox" href="{{url}}">
+              <img class="img-responsive" src="{{img}}" alt="">
+          </a>
+          <p class="name">{{name}}</p>
+          <p class="qf">
+              <span class="fl price">￥{{price}}</span>
+              <a href="{{shopurl}}"  class="fl shopname">{{shopname}}</a>
+          </p>
+        </div>
+        {{/each}}
+      </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-</div>
-</div>
+</div> --}}
 
-<script src="/assets/plugins/swiper/swiper.min.js"></script>
+<script src="/assets/plugins/swiper/idangerous.swiper.min.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    var tabsSwiperSpecialStalls = new Swiper('#specialStalls',{//档口推荐轮播
+      speed:500,
+      onSlideChangeStart: function(){
+        $("#tabsSpecialStalls .active").removeClass('active')
+        $("#tabsSpecialStalls li").eq(tabsSwiperSpecialStalls.activeIndex).addClass('active')  
+      }
+    })
+    $("#tabsSpecialStalls li").on('touchstart mousedown',function(e){
+      e.preventDefault()
+      $("#tabsSpecialStalls .active").removeClass('active')
+      $(this).addClass('active')
+      tabsSwiperSpecialStalls.swipeTo( $(this).index() )
+    })
+    $("#tabsSpecialStalls li").click(function(e){
+      e.preventDefault()
+    })
+
+
+
+
+    {{!-- var tabsSwiper = new Swiper('.swiper-container', {
       slidesPerView: 6,
       slidesPerGroup: 12,
       slidesPerColumn: 2,
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+      spaceBetween: 20,
+      onSlideChangeStart: function(){
+        $(".tabs .active").removeClass('active');
+        $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+      }
     });
+
+    $(".tabs a").on('touchstart mousedown',function(e){
+      e.preventDefault()
+      $(".tabs .active").removeClass('active');
+      $(this).addClass('active');
+      tabsSwiper.swipeTo($(this).index());
+    });
+
+    $(".tabs a").click(function(e){
+      e.preventDefault();
+    }); --}}
+
 </script>

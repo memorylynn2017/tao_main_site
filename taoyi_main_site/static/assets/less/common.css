@@ -372,7 +372,7 @@ ol {
 }
 .market-class {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 40px;
   border: 1px solid #ddd;
 }
 .wrapper .container .col-sm-1,
@@ -451,10 +451,13 @@ ol {
     display: none;
   }
 }
+.wrapper .sentiment {
+  overflow: hidden;
+}
 .wrapper .sentiment .title {
+  height: 30px;
   background: #fff;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
 }
 .wrapper .sentiment .title span {
   font-size: 18px;
@@ -472,28 +475,51 @@ ol {
   float: left;
   padding: 0 20px;
   line-height: 30px;
-  font-size: #000;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
 }
 .wrapper .sentiment .title ul li.active {
   color: red;
+  background: url("http://www.taoee.com/template/20140828/Images/up-index.png") no-repeat center bottom;
 }
-.wrapper .sentiment .productbox .product img {
+.wrapper .sentiment .productbox {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.wrapper .sentiment .productbox .product {
+  padding: 15px 10px 0;
+}
+.wrapper .sentiment .productbox .product .picbox {
+  display: inline-block;
   width: 100%;
+  margin-bottom: 5px;
+}
+.wrapper .sentiment .productbox .product .picbox img {
+  width: 100%;
+  vertical-align: top;
 }
 .wrapper .sentiment .productbox .product .name {
   line-height: 20px;
+  font-size: 14px;
   color: #666;
   margin-bottom: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  margin-bottom: 15px;
+}
+.wrapper .sentiment .productbox .product .msg {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #ddd;
 }
 .wrapper .sentiment .productbox .product .price {
   display: inline-block;
   width: 40%;
+  font-size: 14px;
   line-height: 20px;
-  color: red;
-  margin-bottom: 10px;
+  color: #ff6699;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -501,13 +527,18 @@ ol {
 .wrapper .sentiment .productbox .product .shopname {
   display: inline-block;
   width: 60%;
+  font-size: 14px;
   line-height: 20px;
-  color: #666;
+  color: #656d77;
   text-align: right;
   margin-bottom: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+.wrapper .sentiment .productbox .product .shopname:hover {
+  color: #ff6600;
+  text-decoration: none;
 }
 .wrapper .market-class .row {
   margin: 0;
